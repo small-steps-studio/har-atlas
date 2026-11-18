@@ -1,0 +1,750 @@
+{
+ "01-chrome-0.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n24 requests to 11 hosts, 563.5 KB transferred, 7295 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n11 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 6 |\n| 3xx | 5 |\n| 4xx | 7 |\n| 5xx | 3 |\n| no response | 1 |\n| other | 2 |\n\nRecorded with Firefox 125.0."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n11 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 500 | GET | https://Docs.Example.TEST/img/hero.webp | Internal Server Error |\n| 404 | GET | http://auth.example.test/fonts/inter.woff2 | Not Found |\n| 502 | OPTIONS | https://shop.example.test/v2/cart | Bad Gateway |\n| 0 | GET | https://img.example-media.test/fonts/inter.woff2 |  |\n| 404 | GET | https://api.example.test/ | Not Found |\n| 403 | GET | data:image/png;base64,iVBORw0KGgo= | Forbidden |\n| 403 | GET | https://xn--bcher-kva.example.test/v2/cart | Forbidden |\n| 404 | GET | https://img.example-media.test/app.min.js | Not Found |\n| 404 | GET | https://metrics.example-stats.test/index.html | Not Found |\n| 404 | GET | https://fonts.example-cdn.test/collect?e=view\\&id=7 | Not Found |\n| 500 | GET | https://cdn.example-static.test/img/hero.webp | Internal Server Error |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 461 ms | GET | 500 | 367 ms | https://cdn.example-static.test/img/hero.webp |\n| 2 | 437 ms | GET | 404 | 339 ms | https://metrics.example-stats.test/index.html |\n| 3 | 434 ms | OPTIONS | 502 | 337 ms | https://shop.example.test/v2/cart |\n| 4 | 424 ms | GET | 0 | 277 ms | https://img.example-media.test/fonts/inter.woff2 |\n| 5 | 374 ms | GET | 403 | 271 ms | data:image/png;base64,iVBORw0KGgo= |\n| 6 | 365 ms | GET | 204 | 197 ms | https://xn--bcher-kva.example.test/img/hero.webp |\n| 7 | 359 ms | GET | 404 | 240 ms | http://auth.example.test/fonts/inter.woff2 |\n| 8 | 359 ms | GET | 500 | 257 ms | https://Docs.Example.TEST/img/hero.webp |\n| 9 | 340 ms | GET | 301 | 230 ms | https://127.0.0.1:8080/app.min.js |\n| 10 | 340 ms | GET | 101 | 188 ms | https://fonts.example-cdn.test/styles/site.css |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| xn--bcher-kva.example.test | 4 | 2.3 KB | 1081 ms | 157 ms | 1 |\n| shop.example.test | 3 | 22.6 KB | 977 ms | 215 ms | 1 |\n| api.example.test | 2 | 302.5 KB | 423 ms | 130 ms | 1 |\n| cdn.example-static.test | 2 | 142.9 KB | 620 ms | 242 ms | 1 |\n| \\[2001:db8::7\\] | 2 | 28.9 KB | 331 ms | 102 ms | 0 |\n| fonts.example-cdn.test | 2 | 24.1 KB | 664 ms | 239 ms | 1 |\n| docs.example.test | 2 | 14.9 KB | 661 ms | 230 ms | 1 |\n| img.example-media.test | 2 | 1.3 KB | 757 ms | 266 ms | 2 |\n| auth.example.test | 2 | 1.3 KB | 630 ms | 217 ms | 1 |\n| metrics.example-stats.test | 1 | 20.6 KB | 437 ms | 339 ms | 1 |\n| (no host) | 1 | 1.3 KB | 374 ms | 271 ms | 1 |\n| 127.0.0.1 | 1 | 933 B | 340 ms | 230 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n7 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://shop.example.test/v2/cart | 20.0 KB |\n| https://api.example.test/ | 298.9 KB |\n| https://api.example.test/ | 3.0 KB |\n| https://img.example-media.test/app.min.js | 1.1 KB |\n| https://metrics.example-stats.test/index.html | 20.4 KB |\n| https://cdn.example-static.test/data.json | 12.7 KB |\n| http://\\[2001:db8::7\\]/img/hero.webp | 28.2 KB |\n\n## Responses without caching headers\n\n1 response without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://cdn.example-static.test/data.json | text/html |\n\n## Compression savings\n\n421.3 KB compressed to 172.3 KB over 10 responses."
+  }
+ },
+ "02-chrome-1.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n28 requests to 11 hosts, 883.5 KB transferred, 8699 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n10 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 6 |\n| 3xx | 11 |\n| 4xx | 1 |\n| 5xx | 8 |\n| no response | 1 |\n| other | 1 |\n\nRecorded with WebInspector 537.36."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n10 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 500 | OPTIONS | https://cdn.example-static.test/data.json | Internal Server Error |\n| 502 | GET | http://auth.example.test/data.json | Bad Gateway |\n| 502 | GET | https://api.example.test/styles/site.css | Bad Gateway |\n| 503 | GET | https://127.0.0.1:8080/fonts/inter.woff2 | Service Unavailable |\n| 503 | GET | https://\\[2001:db8::7\\]/old-path | Service Unavailable |\n| 500 | GET | https://cdn.example-static.test/styles/site.css | Internal Server Error |\n| 500 | GET | https://api.example.test/fonts/inter.woff2 | Internal Server Error |\n| 0 | POST | https://auth.example.test/collect?e=view\\&id=7 |  |\n| 502 | GET | https://Docs.Example.TEST/fonts/inter.woff2 | Bad Gateway |\n| 403 | GET | blob:https://shop.example.test/3b9c1d2e | Forbidden |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 524 ms | GET | 302 | 360 ms | https://metrics.example-stats.test/app.min.js |\n| 2 | 465 ms | GET | 301 | 389 ms | http://metrics.example-stats.test/search?q=a\\|b |\n| 3 | 460 ms | OPTIONS | 500 | 359 ms | https://cdn.example-static.test/data.json |\n| 4 | 449 ms | GET | 200 | 331 ms | https://api.example.test/v2/checkout |\n| 5 | 447 ms | GET | 302 | 355 ms | http://\\[2001:db8::7\\]/search?q=a\\|b |\n| 6 | 437 ms | GET | 302 | 239 ms | https://Docs.Example.TEST/data.json |\n| 7 | 374 ms | GET | 503 | 336 ms | https://127.0.0.1:8080/fonts/inter.woff2 |\n| 8 | 373 ms | GET | 500 | 303 ms | https://api.example.test/fonts/inter.woff2 |\n| 9 | 368 ms | GET | 101 | 332 ms | blob:https://shop.example.test/3b9c1d2e |\n| 10 | 359 ms | PUT | 301 | 286 ms | https://img.example-media.test/styles/site.css |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| api.example.test | 4 | 370.6 KB | 1114 ms | 176 ms | 2 |\n| docs.example.test | 4 | 125.9 KB | 1228 ms | 184 ms | 1 |\n| cdn.example-static.test | 3 | 39.9 KB | 934 ms | 215 ms | 2 |\n| (no host) | 3 | 19.6 KB | 870 ms | 196 ms | 1 |\n| auth.example.test | 3 | 5.7 KB | 768 ms | 145 ms | 2 |\n| \\[2001:db8::7\\] | 2 | 269.0 KB | 723 ms | 232 ms | 1 |\n| metrics.example-stats.test | 2 | 36.4 KB | 989 ms | 374 ms | 0 |\n| shop.example.test | 2 | 6.9 KB | 437 ms | 179 ms | 0 |\n| img.example-media.test | 2 | 1.4 KB | 669 ms | 230 ms | 0 |\n| 127.0.0.1 | 1 | 7.5 KB | 374 ms | 336 ms | 1 |\n| xn--bcher-kva.example.test | 1 | 415 B | 358 ms | 181 ms | 0 |\n| fonts.example-cdn.test | 1 | 298 B | 234 ms | 178 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n7 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://cdn.example-static.test/data.json | 13.2 KB |\n| https://api.example.test/styles/site.css | 326.1 KB |\n| http://metrics.example-stats.test/search?q=a\\|b | 27.9 KB |\n| http://Docs.Example.TEST/styles/site.css | 6.8 KB |\n| https://127.0.0.1:8080/fonts/inter.woff2 | 7.3 KB |\n| https://shop.example.test/data.json | 5.8 KB |\n| https://api.example.test/data.json | 20.1 KB |\n\n## Responses without caching headers\n\n0 responses without caching headers.\n\n## Compression savings\n\n81.3 KB compressed to 32.7 KB over 7 responses."
+  }
+ },
+ "03-chrome-2.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n23 requests to 11 hosts, 634.1 KB transferred, 6240 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n7 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 4 |\n| 3xx | 10 |\n| 4xx | 4 |\n| 5xx | 3 |\n| other | 2 |\n\nRecorded with Firefox 125.0."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n7 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 502 | GET | https://127.0.0.1:8080/app.min.js | Bad Gateway |\n| 404 | DELETE | https://\\[2001:db8::7\\]/data.json | Not Found |\n| 403 | GET | https://auth.example.test/ | Forbidden |\n| 404 | GET | https://Docs.Example.TEST/fonts/inter.woff2 | Not Found |\n| 403 | GET | https://cdn.example-static.test/collect?e=view\\&id=7 | Forbidden |\n| 500 | GET | https://api.example.test/index.html | Internal Server Error |\n| 503 | GET | https://xn--bcher-kva.example.test/fonts/inter.woff2 | Service Unavailable |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 462 ms | GET | 403 | 373 ms | https://auth.example.test/ |\n| 2 | 446 ms | GET | 404 | 332 ms | https://Docs.Example.TEST/fonts/inter.woff2 |\n| 3 | 445 ms | GET | 502 | 358 ms | https://127.0.0.1:8080/app.min.js |\n| 4 | 441 ms | GET | 301 | 389 ms | https://fonts.example-cdn.test/logo.svg |\n| 5 | 377 ms | GET | 301 | 324 ms | https://fonts.example-cdn.test/ |\n| 6 | 369 ms | GET | 304 | 360 ms | https://img.example-media.test/v2/cart |\n| 7 | 329 ms | GET | 302 | 236 ms | https://auth.example.test/logo.svg |\n| 8 | 322 ms | GET | 301 | 232 ms | https://auth.example.test/logo.svg |\n| 9 | 319 ms | GET | 302 | 243 ms | https://metrics.example-stats.test/old-path |\n| 10 | 315 ms | GET | 304 | 145 ms | https://auth.example.test/index.html |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| auth.example.test | 4 | 234.6 KB | 1428 ms | 246 ms | 1 |\n| docs.example.test | 3 | 5.8 KB | 794 ms | 138 ms | 1 |\n| fonts.example-cdn.test | 2 | 170.5 KB | 818 ms | 357 ms | 0 |\n| 127.0.0.1 | 2 | 123.8 KB | 685 ms | 209 ms | 1 |\n| xn--bcher-kva.example.test | 2 | 31.9 KB | 395 ms | 82 ms | 1 |\n| api.example.test | 2 | 20.2 KB | 337 ms | 99 ms | 1 |\n| cdn.example-static.test | 2 | 14.8 KB | 468 ms | 69 ms | 1 |\n| metrics.example-stats.test | 2 | 9.6 KB | 429 ms | 145 ms | 0 |\n| shop.example.test | 2 | 7.2 KB | 432 ms | 95 ms | 0 |\n| \\[2001:db8::7\\] | 1 | 15.5 KB | 85 ms | 14 ms | 1 |\n| img.example-media.test | 1 | 211 B | 369 ms | 360 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n4 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://auth.example.test/logo.svg | 18.2 KB |\n| https://auth.example.test/logo.svg | 212.7 KB |\n| http://Docs.Example.TEST/logo.svg | 2.8 KB |\n| https://api.example.test/v2/cart | 9.1 KB |\n\n## Responses without caching headers\n\n1 response without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://shop.example.test/app.min.js | x-unknown |\n\n## Compression savings\n\n912.2 KB compressed to 380.8 KB over 15 responses."
+  }
+ },
+ "04-chrome-3.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n10 requests to 6 hosts, 67.9 KB transferred, 3528 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n5 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 3 |\n| 3xx | 2 |\n| 5xx | 4 |\n| no response | 1 |\n\nRecorded with WebInspector 537.36."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n5 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 503 | GET | https://metrics.example-stats.test/logo.svg | Service Unavailable |\n| 502 | GET | https://metrics.example-stats.test/search?q=a\\|b | Bad Gateway |\n| 503 | GET | https://fonts.example-cdn.test/data.json | Service Unavailable |\n| 502 | GET | https://api.example.test/collect?e=view\\&id=7 | Bad Gateway |\n| 0 | GET | https://xn--bcher-kva.example.test/img/hero.webp |  |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 512 ms | GET | 502 | 346 ms | https://api.example.test/collect?e=view\\&id=7 |\n| 2 | 433 ms | GET | 0 | 328 ms | https://xn--bcher-kva.example.test/img/hero.webp |\n| 3 | 427 ms | GET | 302 | 311 ms | https://Docs.Example.TEST/img/hero.webp |\n| 4 | 425 ms | GET | 200 | 284 ms | https://auth.example.test/fonts/inter.woff2 |\n| 5 | 360 ms | GET | 200 | 350 ms | https://xn--bcher-kva.example.test/v2/checkout |\n| 6 | 342 ms | GET | 304 | 187 ms | https://api.example.test/v2/checkout |\n| 7 | 332 ms | GET | 503 | 258 ms | https://metrics.example-stats.test/logo.svg |\n| 8 | 308 ms | GET | 200 | 286 ms | https://auth.example.test/ |\n| 9 | 242 ms | GET | 503 | 154 ms | https://fonts.example-cdn.test/data.json |\n| 10 | 147 ms | GET | 502 | 47 ms | https://metrics.example-stats.test/search?q=a\\|b |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| metrics.example-stats.test | 2 | 19.0 KB | 478 ms | 152 ms | 2 |\n| auth.example.test | 2 | 13.2 KB | 733 ms | 285 ms | 0 |\n| xn--bcher-kva.example.test | 2 | 12.4 KB | 793 ms | 339 ms | 1 |\n| api.example.test | 2 | 5.8 KB | 854 ms | 266 ms | 1 |\n| fonts.example-cdn.test | 1 | 11.7 KB | 242 ms | 154 ms | 1 |\n| docs.example.test | 1 | 5.9 KB | 427 ms | 311 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n2 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://metrics.example-stats.test/logo.svg | 10.5 KB |\n| https://xn--bcher-kva.example.test/v2/checkout | 12.1 KB |\n\n## Responses without caching headers\n\n0 responses without caching headers.\n\n## Compression savings\n\n96.1 KB compressed to 34.8 KB over 5 responses."
+  }
+ },
+ "05-chrome-4.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n36 requests to 10 hosts, 804.8 KB transferred, 11006 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n15 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 9 |\n| 3xx | 11 |\n| 4xx | 6 |\n| 5xx | 5 |\n| no response | 4 |\n| other | 1 |\n\nRecorded with Example Recorder 2.1."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n15 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 403 | GET | https://api.example.test/v2/checkout | Forbidden |\n| 0 | GET | https://metrics.example-stats.test/old-path |  |\n| 403 | GET | https://shop.example.test/styles/site.css | Forbidden |\n| 0 | GET | data:image/png;base64,iVBORw0KGgo= |  |\n| 502 | GET | http://metrics.example-stats.test/img/hero.webp | Bad Gateway |\n| 500 | GET | https://\\[2001:db8::7\\]/fonts/inter.woff2 | Internal Server Error |\n| 503 | PUT | https://\\[2001:db8::7\\]/old-path | Service Unavailable |\n| 0 | GET | https://cdn.example-static.test/old-path |  |\n| 502 | GET | https://127.0.0.1:8080/fonts/inter.woff2 | Bad Gateway |\n| 403 | GET | https://\\[2001:db8::7\\]/v2/cart | Forbidden |\n| 502 | OPTIONS | https://cdn.example-static.test/ | Bad Gateway |\n| 404 | GET | https://fonts.example-cdn.test/v2/checkout | Not Found |\n| 404 | GET | https://xn--bcher-kva.example.test/v2/checkout | Not Found |\n| 404 | GET | https://127.0.0.1:8080/v2/checkout | Not Found |\n| 0 | OPTIONS | data:image/png;base64,iVBORw0KGgo= |  |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 510 ms | GET | 302 | 335 ms | https://metrics.example-stats.test/img/hero.webp |\n| 2 | 496 ms | GET | 301 | 393 ms | http://fonts.example-cdn.test/v2/checkout |\n| 3 | 491 ms | GET | 204 | 398 ms | https://127.0.0.1:8080/index.html |\n| 4 | 462 ms | GET | 403 | 343 ms | https://\\[2001:db8::7\\]/v2/cart |\n| 5 | 461 ms | GET | 404 | 399 ms | https://fonts.example-cdn.test/v2/checkout |\n| 6 | 457 ms | GET | 101 | 392 ms | https://fonts.example-cdn.test/data.json |\n| 7 | 450 ms | GET | 404 | 334 ms | https://127.0.0.1:8080/v2/checkout |\n| 8 | 436 ms | GET | 403 | 398 ms | https://shop.example.test/styles/site.css |\n| 9 | 433 ms | GET | 0 | 297 ms | https://metrics.example-stats.test/old-path |\n| 10 | 417 ms | GET | 200 | 324 ms | https://Docs.Example.TEST/logo.svg |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| \\[2001:db8::7\\] | 5 | 193.6 KB | 1476 ms | 179 ms | 3 |\n| metrics.example-stats.test | 5 | 178.0 KB | 2047 ms | 302 ms | 2 |\n| cdn.example-static.test | 5 | 7.5 KB | 826 ms | 103 ms | 2 |\n| shop.example.test | 4 | 266.8 KB | 1172 ms | 219 ms | 1 |\n| fonts.example-cdn.test | 4 | 14.1 KB | 1761 ms | 373 ms | 1 |\n| 127.0.0.1 | 4 | 5.8 KB | 1403 ms | 253 ms | 2 |\n| (no host) | 3 | 297 B | 502 ms | 89 ms | 2 |\n| img.example-media.test | 2 | 65.6 KB | 542 ms | 164 ms | 0 |\n| docs.example.test | 2 | 41.3 KB | 740 ms | 293 ms | 0 |\n| xn--bcher-kva.example.test | 1 | 20.4 KB | 162 ms | 81 ms | 1 |\n| api.example.test | 1 | 11.5 KB | 376 ms | 338 ms | 1 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n4 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://api.example.test/v2/checkout | 11.2 KB |\n| https://shop.example.test/styles/site.css | 24.1 KB |\n| http://fonts.example-cdn.test/v2/checkout | 3.4 KB |\n| https://metrics.example-stats.test/collect?e=view\\&id=7 | 155.8 KB |\n\n## Responses without caching headers\n\n3 responses without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://fonts.example-cdn.test/app.min.js | image/webp |\n| https://shop.example.test/data.json | font/woff2 |\n| https://cdn.example-static.test/styles/site.css | image/png |\n\n## Compression savings\n\n740.1 KB compressed to 315.3 KB over 17 responses."
+  }
+ },
+ "06-chrome-5.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n29 requests to 11 hosts, 1.3 MB transferred, 8261 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n16 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 6 |\n| 3xx | 6 |\n| 4xx | 4 |\n| 5xx | 9 |\n| no response | 3 |\n| other | 1 |\n\nRecorded with Example Recorder 2.1."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n16 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 404 | GET | https://xn--bcher-kva.example.test/data.json | Not Found |\n| 503 | GET | https://metrics.example-stats.test/v2/checkout | Service Unavailable |\n| 502 | GET | https://auth.example.test/old-path | Bad Gateway |\n| 502 | GET | https://Docs.Example.TEST/index.html | Bad Gateway |\n| 404 | GET | http://\\[2001:db8::7\\]/search?q=a\\|b | Not Found |\n| 502 | GET | https://cdn.example-static.test/collect?e=view\\&id=7 | Bad Gateway |\n| 500 | GET | https://fonts.example-cdn.test/ | Internal Server Error |\n| 403 | GET | https://auth.example.test/ | Forbidden |\n| 502 | GET | https://cdn.example-static.test/v2/cart | Bad Gateway |\n| 403 | GET | https://\\[2001:db8::7\\]/logo.svg | Forbidden |\n| 0 | GET | https://shop.example.test/data.json |  |\n| 503 | DELETE | https://shop.example.test/v2/cart | Service Unavailable |\n| 502 | GET | https://\\[2001:db8::7\\]/data.json | Bad Gateway |\n| 503 | GET | https://127.0.0.1:8080/v2/checkout | Service Unavailable |\n| 0 | DELETE | http://\\[2001:db8::7\\]/collect?e=view\\&id=7 |  |\n| 0 | GET | https://api.example.test/styles/site.css |  |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 532 ms | GET | 200 | 375 ms | https://Docs.Example.TEST/ |\n| 2 | 475 ms | GET | 403 | 387 ms | https://auth.example.test/ |\n| 3 | 471 ms | GET | 502 | 384 ms | https://cdn.example-static.test/v2/cart |\n| 4 | 450 ms | GET | 502 | 349 ms | https://cdn.example-static.test/collect?e=view\\&id=7 |\n| 5 | 444 ms | GET | 200 | 377 ms | blob:https://shop.example.test/3b9c1d2e |\n| 6 | 437 ms | GET | 503 | 320 ms | https://127.0.0.1:8080/v2/checkout |\n| 7 | 410 ms | DELETE | 0 | 292 ms | http://\\[2001:db8::7\\]/collect?e=view\\&id=7 |\n| 8 | 407 ms | GET | 502 | 326 ms | https://\\[2001:db8::7\\]/data.json |\n| 9 | 407 ms | POST | 101 | 351 ms | https://127.0.0.1:8080/logo.svg |\n| 10 | 401 ms | GET | 200 | 363 ms | http://metrics.example-stats.test/fonts/inter.woff2 |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| shop.example.test | 4 | 423.1 KB | 698 ms | 83 ms | 2 |\n| docs.example.test | 4 | 45.8 KB | 809 ms | 126 ms | 1 |\n| \\[2001:db8::7\\] | 4 | 15.3 KB | 1365 ms | 244 ms | 4 |\n| cdn.example-static.test | 3 | 80.4 KB | 1263 ms | 340 ms | 2 |\n| 127.0.0.1 | 3 | 27.0 KB | 1064 ms | 287 ms | 1 |\n| metrics.example-stats.test | 2 | 45.3 KB | 703 ms | 266 ms | 1 |\n| api.example.test | 2 | 22.1 KB | 223 ms | 37 ms | 1 |\n| auth.example.test | 2 | 13.6 KB | 673 ms | 231 ms | 2 |\n| fonts.example-cdn.test | 2 | 2.1 KB | 502 ms | 165 ms | 1 |\n| (no host) | 1 | 390.4 KB | 444 ms | 377 ms | 0 |\n| xn--bcher-kva.example.test | 1 | 268.2 KB | 292 ms | 222 ms | 1 |\n| img.example-media.test | 1 | 10.7 KB | 224 ms | 144 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n9 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://shop.example.test/v2/cart | 104.6 KB |\n| https://metrics.example-stats.test/v2/checkout | 18.4 KB |\n| https://auth.example.test/old-path | 3.3 KB |\n| https://Docs.Example.TEST/index.html | 24.9 KB |\n| https://127.0.0.1:8080/logo.svg | 9.4 KB |\n| http://metrics.example-stats.test/fonts/inter.woff2 | 26.6 KB |\n| https://Docs.Example.TEST/app.min.js | 4.5 KB |\n| https://api.example.test/v2/cart | 21.8 KB |\n| https://127.0.0.1:8080/fonts/inter.woff2 | 16.1 KB |\n\n## Responses without caching headers\n\n1 response without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://fonts.example-cdn.test/collect?e=view\\&id=7 | image/webp |\n\n## Compression savings\n\n295.2 KB compressed to 94.2 KB over 10 responses."
+  }
+ },
+ "07-chrome-6.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n4 requests to 3 hosts, 23.7 KB transferred, 1206 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n1 failed request (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 3 |\n| 4xx | 1 |\n\nRecorded with WebKit Web Inspector 17.4."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n1 failed request.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 403 | GET | https://Docs.Example.TEST/index.html | Forbidden |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 342 ms | GET | 200 | 284 ms | https://xn--bcher-kva.example.test/app.min.js |\n| 2 | 321 ms | GET | 200 | 215 ms | https://fonts.example-cdn.test/index.html |\n| 3 | 309 ms | GET | 403 | 181 ms | https://Docs.Example.TEST/index.html |\n| 4 | 233 ms | GET | 200 | 119 ms | https://xn--bcher-kva.example.test/v2/cart |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| xn--bcher-kva.example.test | 2 | 12.3 KB | 575 ms | 201 ms | 0 |\n| docs.example.test | 1 | 8.1 KB | 309 ms | 181 ms | 1 |\n| fonts.example-cdn.test | 1 | 3.4 KB | 321 ms | 215 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n0 uncompressed text responses.\n\n## Responses without caching headers\n\n2 responses without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://xn--bcher-kva.example.test/v2/cart | text/html |\n| https://fonts.example-cdn.test/index.html | x-unknown |\n\n## Compression savings\n\n71.2 KB compressed to 22.3 KB over 4 responses."
+  }
+ },
+ "08-chrome-7.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n10 requests to 6 hosts, 84.6 KB transferred, 3066 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n2 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 2 |\n| 3xx | 5 |\n| 4xx | 1 |\n| 5xx | 1 |\n| other | 1 |\n\nRecorded with WebKit Web Inspector 17.4."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n2 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 403 | GET | https://Docs.Example.TEST/collect?e=view\\&id=7 | Forbidden |\n| 500 | GET | https://img.example-media.test/old-path | Internal Server Error |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 528 ms | GET | 101 | 344 ms | https://auth.example.test/fonts/inter.woff2 |\n| 2 | 457 ms | GET | 200 | 383 ms | https://fonts.example-cdn.test/img/hero.webp |\n| 3 | 441 ms | GET | 500 | 376 ms | https://img.example-media.test/old-path |\n| 4 | 339 ms | PUT | 304 | 290 ms | https://Docs.Example.TEST/index.html |\n| 5 | 306 ms | PUT | 302 | 163 ms | https://api.example.test/data.json |\n| 6 | 301 ms | GET | 304 | 232 ms | https://shop.example.test/old-path |\n| 7 | 214 ms | GET | 301 | 183 ms | https://Docs.Example.TEST/data.json |\n| 8 | 197 ms | GET | 204 | 175 ms | https://Docs.Example.TEST/old-path |\n| 9 | 161 ms | GET | 403 | 47 ms | https://Docs.Example.TEST/collect?e=view\\&id=7 |\n| 10 | 123 ms | GET | 301 | 71 ms | https://shop.example.test/logo.svg |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| docs.example.test | 4 | 14.7 KB | 911 ms | 174 ms | 1 |\n| shop.example.test | 2 | 18.5 KB | 424 ms | 152 ms | 0 |\n| img.example-media.test | 1 | 34.2 KB | 441 ms | 376 ms | 1 |\n| fonts.example-cdn.test | 1 | 9.1 KB | 457 ms | 383 ms | 0 |\n| auth.example.test | 1 | 4.5 KB | 528 ms | 344 ms | 0 |\n| api.example.test | 1 | 3.5 KB | 306 ms | 163 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n1 uncompressed text response.\n\n| URL | Size |\n| --- | ---: |\n| https://img.example-media.test/old-path | 33.8 KB |\n\n## Responses without caching headers\n\n2 responses without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://fonts.example-cdn.test/img/hero.webp | text/html |\n| https://Docs.Example.TEST/old-path | image/webp |\n\n## Compression savings\n\n76.0 KB compressed to 29.9 KB over 5 responses."
+  }
+ },
+ "09-chrome-8.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n26 requests to 11 hosts, 720.9 KB transferred, 7811 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n11 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 9 |\n| 3xx | 5 |\n| 4xx | 1 |\n| 5xx | 8 |\n| no response | 2 |\n| other | 1 |\n\nRecorded with Firefox 125.0."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n11 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 502 | PUT | https://auth.example.test/v2/cart | Bad Gateway |\n| 0 | GET | https://Docs.Example.TEST/logo.svg |  |\n| 502 | GET | https://cdn.example-static.test/old-path | Bad Gateway |\n| 0 | GET | https://img.example-media.test/img/hero.webp |  |\n| 503 | GET | https://fonts.example-cdn.test/v2/checkout | Service Unavailable |\n| 404 | GET | https://127.0.0.1:8080/collect?e=view\\&id=7 | Not Found |\n| 500 | OPTIONS | https://shop.example.test/img/hero.webp | Internal Server Error |\n| 503 | GET | https://auth.example.test/app.min.js | Service Unavailable |\n| 502 | GET | https://xn--bcher-kva.example.test/logo.svg | Bad Gateway |\n| 500 | GET | https://xn--bcher-kva.example.test/search?q=a\\|b | Internal Server Error |\n| 503 | GET | https://\\[2001:db8::7\\]/v2/checkout | Service Unavailable |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 568 ms | POST | 200 | 379 ms | https://shop.example.test/data.json |\n| 2 | 536 ms | OPTIONS | 200 | 387 ms | http://shop.example.test/ |\n| 3 | 482 ms | GET | 200 | 346 ms | https://cdn.example-static.test/img/hero.webp |\n| 4 | 465 ms | GET | 502 | 291 ms | https://xn--bcher-kva.example.test/logo.svg |\n| 5 | 397 ms | GET | 301 | 384 ms | https://fonts.example-cdn.test/index.html |\n| 6 | 391 ms | GET | 302 | 358 ms | http://cdn.example-static.test/collect?e=view\\&id=7 |\n| 7 | 386 ms | GET | 200 | 280 ms | http://xn--bcher-kva.example.test/old-path |\n| 8 | 361 ms | GET | 503 | 208 ms | https://\\[2001:db8::7\\]/v2/checkout |\n| 9 | 360 ms | GET | 200 | 268 ms | https://metrics.example-stats.test/collect?e=view\\&id=7 |\n| 10 | 354 ms | GET | 500 | 236 ms | https://xn--bcher-kva.example.test/search?q=a\\|b |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| cdn.example-static.test | 5 | 35.3 KB | 1501 ms | 215 ms | 1 |\n| xn--bcher-kva.example.test | 3 | 320.0 KB | 1206 ms | 269 ms | 2 |\n| shop.example.test | 3 | 221.6 KB | 1313 ms | 257 ms | 1 |\n| auth.example.test | 3 | 110.5 KB | 702 ms | 60 ms | 2 |\n| \\[2001:db8::7\\] | 2 | 14.2 KB | 509 ms | 144 ms | 1 |\n| fonts.example-cdn.test | 2 | 9.7 KB | 502 ms | 216 ms | 1 |\n| 127.0.0.1 | 2 | 4.7 KB | 494 ms | 209 ms | 1 |\n| metrics.example-stats.test | 2 | 4.3 KB | 523 ms | 142 ms | 0 |\n| img.example-media.test | 2 | 437 B | 616 ms | 201 ms | 1 |\n| api.example.test | 1 | 225 B | 264 ms | 189 ms | 0 |\n| docs.example.test | 1 | 0 B | 182 ms | 101 ms | 1 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n5 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| http://shop.example.test/ | 6.8 KB |\n| http://cdn.example-static.test/collect?e=view\\&id=7 | 5.6 KB |\n| https://shop.example.test/img/hero.webp | 17.0 KB |\n| https://xn--bcher-kva.example.test/logo.svg | 3.3 KB |\n| https://shop.example.test/data.json | 197.1 KB |\n\n## Responses without caching headers\n\n3 responses without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://cdn.example-static.test/old-path | application/json |\n| http://metrics.example-stats.test/v2/cart | application/json |\n| http://xn--bcher-kva.example.test/old-path | x-unknown |\n\n## Compression savings\n\n476.5 KB compressed to 144.4 KB over 14 responses."
+  }
+ },
+ "10-chrome-9.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n25 requests to 8 hosts, 786.7 KB transferred, 8151 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n9 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 4 |\n| 3xx | 9 |\n| 4xx | 3 |\n| 5xx | 5 |\n| no response | 1 |\n| other | 3 |\n\nRecorded with WebInspector 537.36."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n9 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 403 | GET | https://127.0.0.1:8080/ | Forbidden |\n| 503 | GET | https://fonts.example-cdn.test/styles/site.css | Service Unavailable |\n| 0 | GET | https://Docs.Example.TEST/img/hero.webp |  |\n| 500 | GET | http://127.0.0.1:8080/logo.svg | Internal Server Error |\n| 503 | OPTIONS | https://api.example.test/app.min.js | Service Unavailable |\n| 403 | GET | http://Docs.Example.TEST/old-path | Forbidden |\n| 502 | GET | data:image/png;base64,iVBORw0KGgo= | Bad Gateway |\n| 500 | GET | https://auth.example.test/styles/site.css | Internal Server Error |\n| 404 | GET | https://auth.example.test/v2/cart | Not Found |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 510 ms | GET | 304 | 389 ms | https://img.example-media.test/v2/cart |\n| 2 | 500 ms | GET | 204 | 397 ms | https://auth.example.test/img/hero.webp |\n| 3 | 498 ms | GET | 503 | 392 ms | https://fonts.example-cdn.test/styles/site.css |\n| 4 | 476 ms | PUT | 101 | 277 ms | https://xn--bcher-kva.example.test/old-path |\n| 5 | 445 ms | GET | 302 | 265 ms | http://127.0.0.1:8080/collect?e=view\\&id=7 |\n| 6 | 438 ms | GET | 301 | 321 ms | http://\\[2001:db8::7\\]/v2/checkout |\n| 7 | 433 ms | GET | 301 | 387 ms | https://xn--bcher-kva.example.test/v2/cart |\n| 8 | 427 ms | GET | 304 | 285 ms | https://fonts.example-cdn.test/app.min.js |\n| 9 | 419 ms | GET | 204 | 311 ms | http://img.example-media.test/styles/site.css |\n| 10 | 378 ms | GET | 500 | 337 ms | http://127.0.0.1:8080/logo.svg |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| 127.0.0.1 | 4 | 130.7 KB | 1409 ms | 244 ms | 2 |\n| auth.example.test | 4 | 24.4 KB | 1268 ms | 212 ms | 2 |\n| docs.example.test | 3 | 373.9 KB | 570 ms | 124 ms | 2 |\n| \\[2001:db8::7\\] | 3 | 130.9 KB | 878 ms | 177 ms | 0 |\n| img.example-media.test | 3 | 3.9 KB | 1246 ms | 288 ms | 0 |\n| api.example.test | 2 | 47.6 KB | 442 ms | 93 ms | 1 |\n| fonts.example-cdn.test | 2 | 44.1 KB | 925 ms | 338 ms | 1 |\n| xn--bcher-kva.example.test | 2 | 21.6 KB | 909 ms | 332 ms | 0 |\n| (no host) | 2 | 9.7 KB | 505 ms | 140 ms | 1 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n2 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| http://Docs.Example.TEST/old-path | 373.4 KB |\n| https://auth.example.test/styles/site.css | 17.3 KB |\n\n## Responses without caching headers\n\n0 responses without caching headers.\n\n## Compression savings\n\n1011.6 KB compressed to 365.2 KB over 12 responses."
+  }
+ },
+ "11-chrome-10.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n33 requests to 9 hosts, 1.4 MB transferred, 9902 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n13 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 6 |\n| 3xx | 12 |\n| 4xx | 4 |\n| 5xx | 8 |\n| no response | 1 |\n| other | 2 |\n\nRecorded with Example Recorder 2.1."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n13 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 0 | GET | https://\\[2001:db8::7\\]/v2/checkout |  |\n| 404 | GET | https://metrics.example-stats.test/collect?e=view\\&id=7 | Not Found |\n| 403 | GET | https://\\[2001:db8::7\\]/ | Forbidden |\n| 502 | GET | https://api.example.test/logo.svg | Bad Gateway |\n| 502 | GET | https://api.example.test/ | Bad Gateway |\n| 500 | GET | http://\\[2001:db8::7\\]/collect?e=view\\&id=7 | Internal Server Error |\n| 403 | GET | https://\\[2001:db8::7\\]/ | Forbidden |\n| 503 | GET | https://api.example.test/collect?e=view\\&id=7 | Service Unavailable |\n| 503 | GET | data:image/png;base64,iVBORw0KGgo= | Service Unavailable |\n| 503 | GET | https://\\[2001:db8::7\\]/data.json | Service Unavailable |\n| 503 | GET | data:image/png;base64,iVBORw0KGgo= | Service Unavailable |\n| 500 | GET | https://\\[2001:db8::7\\]/collect?e=view\\&id=7 | Internal Server Error |\n| 403 | GET | https://auth.example.test/search?q=a\\|b | Forbidden |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 572 ms | GET | 404 | 386 ms | https://metrics.example-stats.test/collect?e=view\\&id=7 |\n| 2 | 499 ms | GET | 304 | 389 ms | https://xn--bcher-kva.example.test/v2/cart |\n| 3 | 490 ms | GET | 200 | 386 ms | https://\\[2001:db8::7\\]/fonts/inter.woff2 |\n| 4 | 456 ms | GET | 101 | 375 ms | https://metrics.example-stats.test/data.json |\n| 5 | 439 ms | GET | 500 | 366 ms | http://\\[2001:db8::7\\]/collect?e=view\\&id=7 |\n| 6 | 428 ms | GET | 304 | 353 ms | https://fonts.example-cdn.test/v2/cart |\n| 7 | 421 ms | GET | 503 | 384 ms | data:image/png;base64,iVBORw0KGgo= |\n| 8 | 419 ms | GET | 200 | 352 ms | http://shop.example.test/ |\n| 9 | 412 ms | GET | 302 | 273 ms | https://Docs.Example.TEST/img/hero.webp |\n| 10 | 412 ms | GET | 301 | 386 ms | https://metrics.example-stats.test/logo.svg |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| \\[2001:db8::7\\] | 7 | 616.4 KB | 2007 ms | 175 ms | 6 |\n| metrics.example-stats.test | 5 | 309.8 KB | 1921 ms | 287 ms | 1 |\n| api.example.test | 4 | 44.6 KB | 643 ms | 75 ms | 3 |\n| shop.example.test | 4 | 14.2 KB | 1256 ms | 238 ms | 0 |\n| docs.example.test | 3 | 105.1 KB | 858 ms | 192 ms | 0 |\n| auth.example.test | 3 | 13.5 KB | 994 ms | 203 ms | 1 |\n| xn--bcher-kva.example.test | 2 | 290.3 KB | 779 ms | 268 ms | 0 |\n| (no host) | 2 | 22.9 KB | 593 ms | 208 ms | 2 |\n| img.example-media.test | 2 | 1.8 KB | 422 ms | 70 ms | 0 |\n| fonts.example-cdn.test | 1 | 196 B | 428 ms | 353 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n7 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://metrics.example-stats.test/data.json | 17.0 KB |\n| https://metrics.example-stats.test/collect?e=view\\&id=7 | 21.1 KB |\n| http://\\[2001:db8::7\\]/collect?e=view\\&id=7 | 356.0 KB |\n| https://xn--bcher-kva.example.test/styles/site.css | 289.7 KB |\n| https://\\[2001:db8::7\\]/ | 27.6 KB |\n| https://\\[2001:db8::7\\]/data.json | 51.3 KB |\n| https://img.example-media.test/fonts/inter.woff2 | 1.2 KB |\n\n## Responses without caching headers\n\n2 responses without caching headers.\n\n| URL | Type |\n| --- | --- |\n| http://Docs.Example.TEST/search?q=a\\|b | image/svg\\+xml |\n| https://metrics.example-stats.test/data.json | application/xml |\n\n## Compression savings\n\n871.8 KB compressed to 320.9 KB over 15 responses."
+  }
+ },
+ "12-chrome-11.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n10 requests to 6 hosts, 401.3 KB transferred, 2522 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n6 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 2 |\n| 3xx | 1 |\n| 5xx | 3 |\n| no response | 3 |\n| other | 1 |\n\nRecorded with Firefox 125.0."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n6 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 0 | GET | https://auth.example.test/search?q=a\\|b |  |\n| 502 | GET | https://cdn.example-static.test/app.min.js | Bad Gateway |\n| 0 | PUT | https://img.example-media.test/fonts/inter.woff2 |  |\n| 503 | POST | https://api.example.test/logo.svg | Service Unavailable |\n| 0 | GET | https://auth.example.test/index.html |  |\n| 500 | GET | https://\\[2001:db8::7\\]/fonts/inter.woff2 | Internal Server Error |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 401 ms | GET | 0 | 295 ms | https://auth.example.test/search?q=a\\|b |\n| 2 | 331 ms | GET | 302 | 239 ms | https://api.example.test/img/hero.webp |\n| 3 | 328 ms | GET | 0 | 220 ms | https://auth.example.test/index.html |\n| 4 | 320 ms | GET | 200 | 222 ms | http://metrics.example-stats.test/app.min.js |\n| 5 | 293 ms | GET | 502 | 231 ms | https://cdn.example-static.test/app.min.js |\n| 6 | 212 ms | POST | 503 | 122 ms | https://api.example.test/logo.svg |\n| 7 | 207 ms | PUT | 0 | 159 ms | https://img.example-media.test/fonts/inter.woff2 |\n| 8 | 165 ms | OPTIONS | 204 | 57 ms | https://metrics.example-stats.test/app.min.js |\n| 9 | 161 ms | DELETE | 101 | 122 ms | http://cdn.example-static.test/search?q=a\\|b |\n| 10 | 106 ms | GET | 500 | 19 ms | https://\\[2001:db8::7\\]/fonts/inter.woff2 |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| cdn.example-static.test | 2 | 342.4 KB | 454 ms | 177 ms | 1 |\n| metrics.example-stats.test | 2 | 35.8 KB | 485 ms | 140 ms | 0 |\n| api.example.test | 2 | 9.9 KB | 542 ms | 180 ms | 1 |\n| auth.example.test | 2 | 0 B | 729 ms | 258 ms | 2 |\n| \\[2001:db8::7\\] | 1 | 13.2 KB | 106 ms | 19 ms | 1 |\n| img.example-media.test | 1 | 0 B | 207 ms | 159 ms | 1 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n2 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| http://cdn.example-static.test/search?q=a\\|b | 330.4 KB |\n| https://\\[2001:db8::7\\]/fonts/inter.woff2 | 12.9 KB |\n\n## Responses without caching headers\n\n1 response without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://metrics.example-stats.test/app.min.js | text/css |\n\n## Compression savings\n\n121.2 KB compressed to 55.9 KB over 4 responses."
+  }
+ },
+ "13-firefox-0.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n17 requests to 9 hosts, 221.9 KB transferred, 5141 ms summed over all requests.\n\n12 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 3 |\n| 3xx | 2 |\n| 4xx | 4 |\n| 5xx | 5 |\n| no response | 3 |\n\nRecorded with Example Recorder 2.1."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n12 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 503 | GET | https://xn--bcher-kva.example.test/index.html | Service Unavailable |\n| 503 | GET | https://shop.example.test/logo.svg | Service Unavailable |\n| 502 | GET | https://api.example.test/v2/cart | Bad Gateway |\n| 404 | GET | https://auth.example.test/search?q=a\\|b | Not Found |\n| 0 | GET | https://cdn.example-static.test/search?q=a\\|b |  |\n| 0 | GET | data:image/png;base64,iVBORw0KGgo= |  |\n| 0 | GET | http://Docs.Example.TEST/v2/checkout |  |\n| 500 | GET | https://fonts.example-cdn.test/index.html | Internal Server Error |\n| 403 | GET | http://metrics.example-stats.test/styles/site.css | Forbidden |\n| 502 | GET | https://shop.example.test/ | Bad Gateway |\n| 403 | GET | http://xn--bcher-kva.example.test/v2/cart | Forbidden |\n| 403 | GET | https://shop.example.test/v2/checkout | Forbidden |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 550 ms | GET | 500 | 356 ms | https://fonts.example-cdn.test/index.html |\n| 2 | 524 ms | GET | 204 | 385 ms | https://Docs.Example.TEST/img/hero.webp |\n| 3 | 521 ms | GET | 404 | 345 ms | https://auth.example.test/search?q=a\\|b |\n| 4 | 471 ms | GET | 302 | 356 ms | https://api.example.test/v2/checkout |\n| 5 | 456 ms | GET | 403 | 371 ms | http://metrics.example-stats.test/styles/site.css |\n| 6 | 383 ms | GET | 0 | 325 ms | data:image/png;base64,iVBORw0KGgo= |\n| 7 | 341 ms | GET | 0 | 172 ms | https://cdn.example-static.test/search?q=a\\|b |\n| 8 | 325 ms | GET | 304 | 187 ms | https://img.example-media.test/img/hero.webp |\n| 9 | 262 ms | GET | 200 | 128 ms | data:image/png;base64,iVBORw0KGgo= |\n| 10 | 197 ms | GET | 502 | 159 ms | https://shop.example.test/ |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| shop.example.test | 3 | 35.9 KB | 426 ms | 74 ms | 3 |\n| docs.example.test | 3 | 550 B | 881 ms | 190 ms | 1 |\n| xn--bcher-kva.example.test | 2 | 79.4 KB | 355 ms | 99 ms | 2 |\n| api.example.test | 2 | 76.3 KB | 641 ms | 211 ms | 1 |\n| (no host) | 2 | 1.2 KB | 645 ms | 227 ms | 1 |\n| auth.example.test | 1 | 17.0 KB | 521 ms | 345 ms | 1 |\n| fonts.example-cdn.test | 1 | 10.1 KB | 550 ms | 356 ms | 1 |\n| metrics.example-stats.test | 1 | 1.2 KB | 456 ms | 371 ms | 1 |\n| img.example-media.test | 1 | 330 B | 325 ms | 187 ms | 0 |\n| cdn.example-static.test | 1 | 0 B | 341 ms | 172 ms | 1 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n1 uncompressed text response.\n\n| URL | Size |\n| --- | ---: |\n| https://shop.example.test/ | 8.1 KB |\n\n## Responses without caching headers\n\n0 responses without caching headers.\n\n## Compression savings\n\n413.7 KB compressed to 170.4 KB over 6 responses."
+  }
+ },
+ "14-firefox-1.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n26 requests to 10 hosts, 693.8 KB transferred, 7519 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n11 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 5 |\n| 3xx | 6 |\n| 4xx | 6 |\n| 5xx | 4 |\n| no response | 1 |\n| other | 4 |\n\nRecorded with Firefox 125.0."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n11 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 404 | GET | https://cdn.example-static.test/ | Not Found |\n| 503 | POST | https://\\[2001:db8::7\\]/v2/cart | Service Unavailable |\n| 403 | GET | https://\\[2001:db8::7\\]/app.min.js | Forbidden |\n| 403 | GET | https://api.example.test/fonts/inter.woff2 | Forbidden |\n| 404 | GET | http://auth.example.test/v2/cart | Not Found |\n| 403 | GET | https://\\[2001:db8::7\\]/old-path | Forbidden |\n| 500 | GET | https://fonts.example-cdn.test/img/hero.webp | Internal Server Error |\n| 502 | POST | https://fonts.example-cdn.test/search?q=a\\|b | Bad Gateway |\n| 502 | OPTIONS | https://shop.example.test/index.html | Bad Gateway |\n| 403 | GET | http://127.0.0.1:8080/index.html | Forbidden |\n| 0 | GET | https://auth.example.test/img/hero.webp |  |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 477 ms | GET | 403 | 255 ms | https://\\[2001:db8::7\\]/old-path |\n| 2 | 452 ms | POST | 502 | 331 ms | https://fonts.example-cdn.test/search?q=a\\|b |\n| 3 | 434 ms | GET | 404 | 280 ms | https://cdn.example-static.test/ |\n| 4 | 410 ms | GET | 403 | 297 ms | http://127.0.0.1:8080/index.html |\n| 5 | 406 ms | GET | 200 | 374 ms | https://metrics.example-stats.test/img/hero.webp |\n| 6 | 368 ms | GET | 200 | 317 ms | https://Docs.Example.TEST/app.min.js |\n| 7 | 367 ms | GET | 500 | 280 ms | https://fonts.example-cdn.test/img/hero.webp |\n| 8 | 366 ms | GET | 204 | 221 ms | https://\\[2001:db8::7\\]/v2/cart |\n| 9 | 351 ms | GET | 200 | 175 ms | https://\\[2001:db8::7\\]/collect?e=view\\&id=7 |\n| 10 | 342 ms | OPTIONS | 502 | 185 ms | https://shop.example.test/index.html |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| \\[2001:db8::7\\] | 7 | 260.2 KB | 2206 ms | 165 ms | 3 |\n| auth.example.test | 4 | 140.2 KB | 636 ms | 53 ms | 2 |\n| docs.example.test | 3 | 60.3 KB | 800 ms | 209 ms | 0 |\n| metrics.example-stats.test | 3 | 34.3 KB | 1048 ms | 267 ms | 0 |\n| fonts.example-cdn.test | 2 | 112.4 KB | 819 ms | 306 ms | 2 |\n| cdn.example-static.test | 2 | 67.6 KB | 489 ms | 145 ms | 1 |\n| img.example-media.test | 2 | 5.7 KB | 492 ms | 223 ms | 0 |\n| shop.example.test | 1 | 7.2 KB | 342 ms | 185 ms | 1 |\n| 127.0.0.1 | 1 | 3.3 KB | 410 ms | 297 ms | 1 |\n| api.example.test | 1 | 2.6 KB | 279 ms | 237 ms | 1 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n7 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://\\[2001:db8::7\\]/app.min.js | 1.8 KB |\n| https://Docs.Example.TEST/v2/checkout | 25.8 KB |\n| http://Docs.Example.TEST/old-path | 25.8 KB |\n| http://auth.example.test/v2/cart | 17.9 KB |\n| https://fonts.example-cdn.test/img/hero.webp | 110.6 KB |\n| http://auth.example.test/logo.svg | 14.8 KB |\n| https://metrics.example-stats.test/app.min.js | 12.5 KB |\n\n## Responses without caching headers\n\n1 response without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://cdn.example-static.test/search?q=a\\|b | font/woff2 |\n\n## Compression savings\n\n738.2 KB compressed to 319.7 KB over 13 responses."
+  }
+ },
+ "15-firefox-2.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n21 requests to 8 hosts, 1.4 MB transferred, 6220 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n8 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 6 |\n| 3xx | 5 |\n| 4xx | 2 |\n| 5xx | 4 |\n| no response | 2 |\n| other | 2 |\n\nRecorded with Example Recorder 2.1."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n8 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 502 | GET | https://\\[2001:db8::7\\]/logo.svg | Bad Gateway |\n| 500 | GET | https://\\[2001:db8::7\\]/styles/site.css | Internal Server Error |\n| 500 | GET | https://cdn.example-static.test/ | Internal Server Error |\n| 404 | GET | https://\\[2001:db8::7\\]/index.html | Not Found |\n| 0 | GET | https://auth.example.test/app.min.js |  |\n| 403 | GET | https://api.example.test/data.json | Forbidden |\n| 0 | GET | https://xn--bcher-kva.example.test/img/hero.webp |  |\n| 503 | GET | http://auth.example.test/ | Service Unavailable |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 507 ms | GET | 200 | 368 ms | http://fonts.example-cdn.test/index.html |\n| 2 | 461 ms | GET | 101 | 320 ms | data:image/png;base64,iVBORw0KGgo= |\n| 3 | 460 ms | GET | 0 | 321 ms | https://xn--bcher-kva.example.test/img/hero.webp |\n| 4 | 422 ms | GET | 200 | 398 ms | https://metrics.example-stats.test/index.html |\n| 5 | 422 ms | GET | 0 | 314 ms | https://auth.example.test/app.min.js |\n| 6 | 416 ms | GET | 301 | 325 ms | https://metrics.example-stats.test/v2/checkout |\n| 7 | 409 ms | PUT | 204 | 245 ms | https://shop.example.test/styles/site.css |\n| 8 | 381 ms | GET | 503 | 263 ms | http://auth.example.test/ |\n| 9 | 363 ms | GET | 101 | 260 ms | https://fonts.example-cdn.test/ |\n| 10 | 297 ms | GET | 204 | 215 ms | https://cdn.example-static.test/img/hero.webp |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| metrics.example-stats.test | 3 | 403.8 KB | 955 ms | 266 ms | 0 |\n| \\[2001:db8::7\\] | 3 | 261.9 KB | 497 ms | 115 ms | 3 |\n| xn--bcher-kva.example.test | 3 | 34.6 KB | 934 ms | 221 ms | 1 |\n| auth.example.test | 3 | 14.9 KB | 828 ms | 198 ms | 2 |\n| api.example.test | 2 | 367.9 KB | 513 ms | 161 ms | 1 |\n| fonts.example-cdn.test | 2 | 287.2 KB | 870 ms | 314 ms | 0 |\n| (no host) | 2 | 22.7 KB | 716 ms | 262 ms | 0 |\n| cdn.example-static.test | 2 | 18.5 KB | 499 ms | 134 ms | 1 |\n| shop.example.test | 1 | 151 B | 409 ms | 245 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n3 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://metrics.example-stats.test/index.html | 24.9 KB |\n| https://api.example.test/data.json | 367.3 KB |\n| https://xn--bcher-kva.example.test/search?q=a\\|b | 23.2 KB |\n\n## Responses without caching headers\n\n3 responses without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://metrics.example-stats.test/index.html | text/css |\n| http://fonts.example-cdn.test/index.html | application/javascript |\n| https://shop.example.test/styles/site.css | text/html |\n\n## Compression savings\n\n647.2 KB compressed to 307.2 KB over 6 responses."
+  }
+ },
+ "16-firefox-3.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n14 requests to 9 hosts, 184.3 KB transferred, 4343 ms summed over all requests.\n\n11 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 1 |\n| 4xx | 5 |\n| 5xx | 2 |\n| no response | 4 |\n| other | 2 |\n\nRecorded with WebInspector 537.36."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n11 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 403 | PUT | https://shop.example.test/index.html | Forbidden |\n| 403 | PUT | https://xn--bcher-kva.example.test/v2/checkout | Forbidden |\n| 404 | GET | https://127.0.0.1:8080/index.html | Not Found |\n| 404 | GET | https://\\[2001:db8::7\\]/collect?e=view\\&id=7 | Not Found |\n| 503 | OPTIONS | https://xn--bcher-kva.example.test/data.json | Service Unavailable |\n| 0 | GET | https://auth.example.test/collect?e=view\\&id=7 |  |\n| 403 | OPTIONS | https://img.example-media.test/app.min.js | Forbidden |\n| 0 | GET | https://Docs.Example.TEST/index.html |  |\n| 0 | PUT | https://api.example.test/v2/checkout |  |\n| 0 | GET | https://Docs.Example.TEST/index.html |  |\n| 500 | GET | https://fonts.example-cdn.test/fonts/inter.woff2 | Internal Server Error |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 483 ms | PUT | 403 | 371 ms | https://shop.example.test/index.html |\n| 2 | 457 ms | OPTIONS | 503 | 350 ms | https://xn--bcher-kva.example.test/data.json |\n| 3 | 377 ms | GET | 101 | 327 ms | data:image/png;base64,iVBORw0KGgo= |\n| 4 | 361 ms | GET | 101 | 329 ms | https://shop.example.test/ |\n| 5 | 344 ms | GET | 0 | 256 ms | https://Docs.Example.TEST/index.html |\n| 6 | 334 ms | PUT | 0 | 242 ms | https://api.example.test/v2/checkout |\n| 7 | 316 ms | GET | 0 | 165 ms | https://Docs.Example.TEST/index.html |\n| 8 | 289 ms | GET | 404 | 232 ms | https://\\[2001:db8::7\\]/collect?e=view\\&id=7 |\n| 9 | 283 ms | OPTIONS | 403 | 122 ms | https://img.example-media.test/app.min.js |\n| 10 | 276 ms | GET | 500 | 178 ms | https://fonts.example-cdn.test/fonts/inter.woff2 |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| shop.example.test | 2 | 87.9 KB | 844 ms | 350 ms | 1 |\n| xn--bcher-kva.example.test | 2 | 16.8 KB | 568 ms | 179 ms | 2 |\n| img.example-media.test | 2 | 6.3 KB | 559 ms | 152 ms | 1 |\n| docs.example.test | 2 | 0 B | 660 ms | 211 ms | 2 |\n| (no host) | 1 | 27.3 KB | 377 ms | 327 ms | 0 |\n| \\[2001:db8::7\\] | 1 | 22.0 KB | 289 ms | 232 ms | 1 |\n| fonts.example-cdn.test | 1 | 14.4 KB | 276 ms | 178 ms | 1 |\n| 127.0.0.1 | 1 | 9.6 KB | 186 ms | 68 ms | 1 |\n| api.example.test | 1 | 0 B | 334 ms | 242 ms | 1 |\n| auth.example.test | 1 | 0 B | 249 ms | 186 ms | 1 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n3 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://\\[2001:db8::7\\]/collect?e=view\\&id=7 | 21.6 KB |\n| https://shop.example.test/ | 19.3 KB |\n| https://fonts.example-cdn.test/fonts/inter.woff2 | 13.9 KB |\n\n## Responses without caching headers\n\n1 response without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://img.example-media.test/v2/cart | x-unknown |\n\n## Compression savings\n\n230.7 KB compressed to 99.0 KB over 5 responses."
+  }
+ },
+ "17-firefox-4.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n13 requests to 7 hosts, 1.1 MB transferred, 4054 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n6 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 2 |\n| 3xx | 2 |\n| 4xx | 1 |\n| 5xx | 4 |\n| no response | 1 |\n| other | 3 |\n\nRecorded with Example Recorder 2.1."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n6 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 500 | GET | https://127.0.0.1:8080/old-path | Internal Server Error |\n| 502 | POST | data:image/png;base64,iVBORw0KGgo= | Bad Gateway |\n| 0 | GET | https://Docs.Example.TEST/collect?e=view\\&id=7 |  |\n| 503 | OPTIONS | https://\\[2001:db8::7\\]/search?q=a\\|b | Service Unavailable |\n| 403 | GET | blob:https://shop.example.test/3b9c1d2e | Forbidden |\n| 500 | GET | http://xn--bcher-kva.example.test/v2/checkout | Internal Server Error |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 458 ms | GET | 500 | 379 ms | http://xn--bcher-kva.example.test/v2/checkout |\n| 2 | 427 ms | GET | 101 | 324 ms | https://auth.example.test/collect?e=view\\&id=7 |\n| 3 | 426 ms | OPTIONS | 503 | 288 ms | https://\\[2001:db8::7\\]/search?q=a\\|b |\n| 4 | 385 ms | GET | 500 | 226 ms | https://127.0.0.1:8080/old-path |\n| 5 | 367 ms | GET | 0 | 238 ms | https://Docs.Example.TEST/collect?e=view\\&id=7 |\n| 6 | 318 ms | GET | 301 | 303 ms | https://cdn.example-static.test/old-path |\n| 7 | 307 ms | POST | 502 | 180 ms | data:image/png;base64,iVBORw0KGgo= |\n| 8 | 290 ms | GET | 101 | 176 ms | https://Docs.Example.TEST/img/hero.webp |\n| 9 | 278 ms | GET | 403 | 101 ms | blob:https://shop.example.test/3b9c1d2e |\n| 10 | 267 ms | GET | 204 | 167 ms | https://cdn.example-static.test/search?q=a\\|b |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| cdn.example-static.test | 3 | 718.8 KB | 733 ms | 181 ms | 0 |\n| (no host) | 2 | 172.2 KB | 585 ms | 140 ms | 2 |\n| xn--bcher-kva.example.test | 2 | 120.7 KB | 591 ms | 217 ms | 1 |\n| docs.example.test | 2 | 2.2 KB | 657 ms | 207 ms | 1 |\n| 127.0.0.1 | 1 | 82.0 KB | 385 ms | 226 ms | 1 |\n| \\[2001:db8::7\\] | 1 | 6.0 KB | 426 ms | 288 ms | 1 |\n| auth.example.test | 1 | 4.4 KB | 427 ms | 324 ms | 0 |\n| metrics.example-stats.test | 1 | 422 B | 249 ms | 182 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n1 uncompressed text response.\n\n| URL | Size |\n| --- | ---: |\n| https://cdn.example-static.test/styles/site.css | 358.1 KB |\n\n## Responses without caching headers\n\n1 response without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://cdn.example-static.test/styles/site.css | text/css |\n\n## Compression savings\n\n489.6 KB compressed to 195.0 KB over 5 responses."
+  }
+ },
+ "18-firefox-5.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n24 requests to 11 hosts, 706.4 KB transferred, 8538 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n7 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 7 |\n| 3xx | 8 |\n| 4xx | 3 |\n| 5xx | 3 |\n| no response | 1 |\n| other | 2 |\n\nRecorded with WebInspector 537.36."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n7 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 0 | GET | https://img.example-media.test/search?q=a\\|b |  |\n| 404 | PUT | https://\\[2001:db8::7\\]/data.json | Not Found |\n| 500 | DELETE | https://auth.example.test/data.json | Internal Server Error |\n| 500 | GET | https://cdn.example-static.test/ | Internal Server Error |\n| 502 | GET | https://auth.example.test/v2/checkout | Bad Gateway |\n| 403 | GET | https://fonts.example-cdn.test/search?q=a\\|b | Forbidden |\n| 403 | GET | https://127.0.0.1:8080/img/hero.webp | Forbidden |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 527 ms | GET | 500 | 390 ms | https://cdn.example-static.test/ |\n| 2 | 482 ms | GET | 403 | 383 ms | https://127.0.0.1:8080/img/hero.webp |\n| 3 | 477 ms | GET | 302 | 343 ms | blob:https://shop.example.test/3b9c1d2e |\n| 4 | 476 ms | GET | 502 | 368 ms | https://auth.example.test/v2/checkout |\n| 5 | 465 ms | PUT | 404 | 344 ms | https://\\[2001:db8::7\\]/data.json |\n| 6 | 453 ms | GET | 301 | 327 ms | https://fonts.example-cdn.test/app.min.js |\n| 7 | 450 ms | GET | 302 | 355 ms | https://metrics.example-stats.test/v2/checkout |\n| 8 | 444 ms | GET | 403 | 280 ms | https://fonts.example-cdn.test/search?q=a\\|b |\n| 9 | 439 ms | POST | 200 | 355 ms | https://127.0.0.1:8080/styles/site.css |\n| 10 | 427 ms | GET | 200 | 333 ms | https://\\[2001:db8::7\\]/search?q=a\\|b |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| (no host) | 4 | 68.5 KB | 1269 ms | 212 ms | 0 |\n| 127.0.0.1 | 3 | 182.4 KB | 1130 ms | 281 ms | 1 |\n| fonts.example-cdn.test | 3 | 37.2 KB | 1097 ms | 247 ms | 1 |\n| \\[2001:db8::7\\] | 2 | 234.6 KB | 892 ms | 339 ms | 1 |\n| auth.example.test | 2 | 83.4 KB | 674 ms | 273 ms | 2 |\n| metrics.example-stats.test | 2 | 37.0 KB | 564 ms | 222 ms | 0 |\n| xn--bcher-kva.example.test | 2 | 23.5 KB | 727 ms | 316 ms | 0 |\n| api.example.test | 2 | 14.7 KB | 479 ms | 157 ms | 0 |\n| cdn.example-static.test | 1 | 14.3 KB | 527 ms | 390 ms | 1 |\n| shop.example.test | 1 | 9.6 KB | 416 ms | 291 ms | 0 |\n| docs.example.test | 1 | 1.2 KB | 343 ms | 243 ms | 0 |\n| img.example-media.test | 1 | 0 B | 421 ms | 345 ms | 1 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n9 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://xn--bcher-kva.example.test/logo.svg | 17.4 KB |\n| https://metrics.example-stats.test/data.json | 20.2 KB |\n| https://cdn.example-static.test/ | 14.0 KB |\n| https://api.example.test/old-path | 14.2 KB |\n| https://metrics.example-stats.test/v2/checkout | 16.1 KB |\n| https://127.0.0.1:8080/styles/site.css | 20.1 KB |\n| https://Docs.Example.TEST/ | 1.0 KB |\n| https://auth.example.test/v2/checkout | 22.5 KB |\n| https://\\[2001:db8::7\\]/search?q=a\\|b | 13.0 KB |\n\n## Responses without caching headers\n\n0 responses without caching headers.\n\n## Compression savings\n\n657.1 KB compressed to 304.0 KB over 5 responses."
+  }
+ },
+ "19-firefox-6.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n25 requests to 8 hosts, 1.0 MB transferred, 8290 ms summed over all requests.\n\n11 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 4 |\n| 3xx | 4 |\n| 4xx | 3 |\n| 5xx | 6 |\n| no response | 2 |\n| other | 6 |\n\nRecorded with Firefox 125.0."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n11 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 502 | GET | data:image/png;base64,iVBORw0KGgo= | Bad Gateway |\n| 0 | GET | https://shop.example.test/search?q=a\\|b |  |\n| 403 | GET | data:image/png;base64,iVBORw0KGgo= | Forbidden |\n| 500 | GET | https://fonts.example-cdn.test/styles/site.css | Internal Server Error |\n| 500 | GET | https://Docs.Example.TEST/index.html | Internal Server Error |\n| 503 | GET | https://metrics.example-stats.test/index.html | Service Unavailable |\n| 404 | GET | https://cdn.example-static.test/search?q=a\\|b | Not Found |\n| 403 | GET | blob:https://shop.example.test/3b9c1d2e | Forbidden |\n| 0 | DELETE | http://auth.example.test/styles/site.css |  |\n| 503 | GET | http://metrics.example-stats.test/v2/checkout | Service Unavailable |\n| 500 | GET | https://metrics.example-stats.test/img/hero.webp | Internal Server Error |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 490 ms | GET | 503 | 346 ms | https://metrics.example-stats.test/index.html |\n| 2 | 469 ms | GET | 503 | 396 ms | http://metrics.example-stats.test/v2/checkout |\n| 3 | 463 ms | POST | 101 | 384 ms | https://Docs.Example.TEST/v2/checkout |\n| 4 | 454 ms | POST | 302 | 392 ms | https://metrics.example-stats.test/logo.svg |\n| 5 | 444 ms | GET | 500 | 389 ms | https://fonts.example-cdn.test/styles/site.css |\n| 6 | 434 ms | GET | 403 | 366 ms | blob:https://shop.example.test/3b9c1d2e |\n| 7 | 408 ms | GET | 403 | 386 ms | data:image/png;base64,iVBORw0KGgo= |\n| 8 | 404 ms | GET | 304 | 321 ms | http://Docs.Example.TEST/data.json |\n| 9 | 396 ms | GET | 302 | 326 ms | https://xn--bcher-kva.example.test/v2/cart |\n| 10 | 395 ms | PUT | 200 | 306 ms | https://api.example.test/logo.svg |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| metrics.example-stats.test | 5 | 161.5 KB | 1864 ms | 283 ms | 3 |\n| docs.example.test | 4 | 40.4 KB | 1303 ms | 220 ms | 1 |\n| (no host) | 3 | 388.3 KB | 1171 ms | 346 ms | 3 |\n| xn--bcher-kva.example.test | 3 | 206.4 KB | 953 ms | 211 ms | 0 |\n| shop.example.test | 3 | 16.8 KB | 895 ms | 162 ms | 1 |\n| api.example.test | 3 | 3.3 KB | 957 ms | 229 ms | 0 |\n| cdn.example-static.test | 2 | 25.3 KB | 556 ms | 217 ms | 1 |\n| fonts.example-cdn.test | 1 | 232.5 KB | 444 ms | 389 ms | 1 |\n| auth.example.test | 1 | 0 B | 148 ms | 21 ms | 1 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n6 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://xn--bcher-kva.example.test/logo.svg | 11.5 KB |\n| https://xn--bcher-kva.example.test/v2/cart | 97.3 KB |\n| https://metrics.example-stats.test/logo.svg | 25.2 KB |\n| http://cdn.example-static.test/app.min.js | 11.8 KB |\n| http://metrics.example-stats.test/v2/checkout | 2.1 KB |\n| https://Docs.Example.TEST/v2/checkout | 26.6 KB |\n\n## Responses without caching headers\n\n0 responses without caching headers.\n\n## Compression savings\n\n906.9 KB compressed to 259.2 KB over 10 responses."
+  }
+ },
+ "20-firefox-7.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n18 requests to 8 hosts, 458.9 KB transferred, 6348 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n10 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 4 |\n| 3xx | 4 |\n| 4xx | 2 |\n| 5xx | 7 |\n| no response | 1 |\n\nRecorded with WebInspector 537.36."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n10 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 403 | GET | https://shop.example.test/old-path | Forbidden |\n| 403 | GET | https://api.example.test/fonts/inter.woff2 | Forbidden |\n| 0 | GET | https://metrics.example-stats.test/index.html |  |\n| 500 | GET | https://\\[2001:db8::7\\]/img/hero.webp | Internal Server Error |\n| 503 | GET | https://cdn.example-static.test/old-path | Service Unavailable |\n| 503 | GET | https://metrics.example-stats.test/index.html | Service Unavailable |\n| 502 | GET | https://metrics.example-stats.test/v2/cart | Bad Gateway |\n| 502 | GET | https://img.example-media.test/app.min.js | Bad Gateway |\n| 502 | GET | https://auth.example.test/old-path | Bad Gateway |\n| 502 | GET | https://img.example-media.test/search?q=a\\|b | Bad Gateway |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 545 ms | GET | 503 | 315 ms | https://metrics.example-stats.test/index.html |\n| 2 | 500 ms | GET | 502 | 348 ms | https://auth.example.test/old-path |\n| 3 | 495 ms | GET | 200 | 366 ms | https://metrics.example-stats.test/logo.svg |\n| 4 | 455 ms | GET | 503 | 347 ms | https://cdn.example-static.test/old-path |\n| 5 | 443 ms | GET | 0 | 321 ms | https://metrics.example-stats.test/index.html |\n| 6 | 429 ms | GET | 403 | 345 ms | https://api.example.test/fonts/inter.woff2 |\n| 7 | 412 ms | GET | 200 | 374 ms | http://metrics.example-stats.test/index.html |\n| 8 | 410 ms | GET | 301 | 279 ms | https://img.example-media.test/img/hero.webp |\n| 9 | 406 ms | GET | 500 | 323 ms | https://\\[2001:db8::7\\]/img/hero.webp |\n| 10 | 381 ms | GET | 502 | 223 ms | https://img.example-media.test/search?q=a\\|b |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| metrics.example-stats.test | 5 | 42.2 KB | 2163 ms | 311 ms | 3 |\n| img.example-media.test | 3 | 38.3 KB | 967 ms | 204 ms | 2 |\n| \\[2001:db8::7\\] | 2 | 334.5 KB | 689 ms | 291 ms | 1 |\n| api.example.test | 2 | 12.5 KB | 656 ms | 277 ms | 1 |\n| auth.example.test | 2 | 6.6 KB | 795 ms | 247 ms | 1 |\n| cdn.example-static.test | 2 | 3.6 KB | 645 ms | 240 ms | 1 |\n| shop.example.test | 1 | 21.0 KB | 139 ms | 66 ms | 1 |\n| fonts.example-cdn.test | 1 | 384 B | 295 ms | 216 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n9 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://shop.example.test/old-path | 20.8 KB |\n| https://img.example-media.test/img/hero.webp | 8.9 KB |\n| https://\\[2001:db8::7\\]/img/hero.webp | 5.9 KB |\n| https://\\[2001:db8::7\\]/index.html | 327.9 KB |\n| https://metrics.example-stats.test/index.html | 5.3 KB |\n| https://img.example-media.test/app.min.js | 2.3 KB |\n| https://auth.example.test/old-path | 6.1 KB |\n| http://metrics.example-stats.test/index.html | 26.2 KB |\n| https://metrics.example-stats.test/logo.svg | 6.0 KB |\n\n## Responses without caching headers\n\n2 responses without caching headers.\n\n| URL | Type |\n| --- | --- |\n| http://metrics.example-stats.test/index.html | text/html |\n| https://metrics.example-stats.test/logo.svg | text/html |\n\n## Compression savings\n\n36.2 KB compressed to 12.0 KB over 3 responses."
+  }
+ },
+ "21-slow-0.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n15 requests to 9 hosts, 335.3 KB transferred, 25322 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n8 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 3 |\n| 3xx | 3 |\n| 4xx | 2 |\n| 5xx | 4 |\n| no response | 2 |\n| other | 1 |\n\nRecorded with Firefox 125.0."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n8 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 403 | GET | https://Docs.Example.TEST/ | Forbidden |\n| 502 | GET | https://fonts.example-cdn.test/logo.svg | Bad Gateway |\n| 404 | GET | https://cdn.example-static.test/ | Not Found |\n| 0 | GET | https://auth.example.test/index.html |  |\n| 502 | GET | https://cdn.example-static.test/old-path | Bad Gateway |\n| 500 | GET | https://Docs.Example.TEST/v2/cart | Internal Server Error |\n| 0 | GET | https://\\[2001:db8::7\\]/old-path |  |\n| 502 | GET | https://fonts.example-cdn.test/search?q=a\\|b | Bad Gateway |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 2827 ms | GET | 301 | 2699 ms | https://127.0.0.1:8080/v2/cart |\n| 2 | 2820 ms | GET | 0 | 2802 ms | https://\\[2001:db8::7\\]/old-path |\n| 3 | 2545 ms | GET | 200 | 2382 ms | https://Docs.Example.TEST/logo.svg |\n| 4 | 2418 ms | GET | 204 | 2317 ms | https://xn--bcher-kva.example.test/old-path |\n| 5 | 2327 ms | GET | 404 | 2235 ms | https://cdn.example-static.test/ |\n| 6 | 2300 ms | GET | 301 | 2266 ms | https://xn--bcher-kva.example.test/search?q=a\\|b |\n| 7 | 2264 ms | GET | 0 | 2214 ms | https://auth.example.test/index.html |\n| 8 | 2034 ms | GET | 502 | 1961 ms | https://fonts.example-cdn.test/logo.svg |\n| 9 | 2027 ms | GET | 403 | 1941 ms | https://Docs.Example.TEST/ |\n| 10 | 1090 ms | GET | 301 | 902 ms | https://api.example.test/index.html |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| docs.example.test | 3 | 160.3 KB | 4862 ms | 1491 ms | 2 |\n| fonts.example-cdn.test | 2 | 73.3 KB | 3121 ms | 1492 ms | 2 |\n| cdn.example-static.test | 2 | 56.4 KB | 2692 ms | 1225 ms | 2 |\n| 127.0.0.1 | 2 | 17.0 KB | 3094 ms | 1398 ms | 0 |\n| xn--bcher-kva.example.test | 2 | 3.0 KB | 4718 ms | 2291 ms | 0 |\n| metrics.example-stats.test | 1 | 19.8 KB | 662 ms | 562 ms | 0 |\n| api.example.test | 1 | 5.5 KB | 1090 ms | 902 ms | 0 |\n| \\[2001:db8::7\\] | 1 | 0 B | 2820 ms | 2802 ms | 1 |\n| auth.example.test | 1 | 0 B | 2264 ms | 2214 ms | 1 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n3 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://Docs.Example.TEST/ | 28.5 KB |\n| https://api.example.test/index.html | 5.3 KB |\n| https://Docs.Example.TEST/logo.svg | 18.9 KB |\n\n## Responses without caching headers\n\n0 responses without caching headers.\n\n## Compression savings\n\n631.2 KB compressed to 245.5 KB over 7 responses."
+  }
+ },
+ "22-slow-1.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n15 requests to 8 hosts, 782.2 KB transferred, 24089 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n8 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 3 |\n| 3xx | 2 |\n| 4xx | 2 |\n| 5xx | 4 |\n| no response | 2 |\n| other | 2 |\n\nRecorded with WebKit Web Inspector 17.4."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n8 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 0 | GET | https://Docs.Example.TEST/old-path |  |\n| 500 | PUT | https://api.example.test/index.html | Internal Server Error |\n| 404 | GET | https://cdn.example-static.test/app.min.js | Not Found |\n| 500 | GET | https://\\[2001:db8::7\\]/data.json | Internal Server Error |\n| 500 | GET | blob:https://shop.example.test/3b9c1d2e | Internal Server Error |\n| 0 | GET | https://cdn.example-static.test/old-path |  |\n| 502 | GET | http://auth.example.test/img/hero.webp | Bad Gateway |\n| 403 | GET | https://cdn.example-static.test/old-path | Forbidden |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 3117 ms | PUT | 500 | 2930 ms | https://api.example.test/index.html |\n| 2 | 3077 ms | GET | 204 | 2954 ms | https://img.example-media.test/collect?e=view\\&id=7 |\n| 3 | 2591 ms | GET | 101 | 2457 ms | https://img.example-media.test/logo.svg |\n| 4 | 2520 ms | GET | 500 | 2463 ms | blob:https://shop.example.test/3b9c1d2e |\n| 5 | 2121 ms | GET | 301 | 2005 ms | https://fonts.example-cdn.test/app.min.js |\n| 6 | 1958 ms | GET | 404 | 1832 ms | https://cdn.example-static.test/app.min.js |\n| 7 | 1698 ms | GET | 403 | 1585 ms | https://cdn.example-static.test/old-path |\n| 8 | 1422 ms | GET | 0 | 1283 ms | https://Docs.Example.TEST/old-path |\n| 9 | 1216 ms | GET | 101 | 1194 ms | https://shop.example.test/styles/site.css |\n| 10 | 1187 ms | GET | 502 | 1041 ms | http://auth.example.test/img/hero.webp |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| cdn.example-static.test | 3 | 377.2 KB | 4337 ms | 1358 ms | 3 |\n| img.example-media.test | 2 | 227.1 KB | 5668 ms | 2706 ms | 0 |\n| shop.example.test | 2 | 118.5 KB | 1961 ms | 919 ms | 0 |\n| api.example.test | 2 | 17.2 KB | 3892 ms | 1813 ms | 1 |\n| docs.example.test | 2 | 7.3 KB | 2116 ms | 927 ms | 1 |\n| auth.example.test | 1 | 16.9 KB | 1187 ms | 1041 ms | 1 |\n| \\[2001:db8::7\\] | 1 | 12.3 KB | 288 ms | 154 ms | 1 |\n| fonts.example-cdn.test | 1 | 4.1 KB | 2121 ms | 2005 ms | 0 |\n| (no host) | 1 | 1.7 KB | 2520 ms | 2463 ms | 1 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n7 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://api.example.test/search?q=a\\|b | 14.8 KB |\n| https://cdn.example-static.test/app.min.js | 357.8 KB |\n| https://img.example-media.test/logo.svg | 226.3 KB |\n| https://\\[2001:db8::7\\]/data.json | 11.9 KB |\n| http://auth.example.test/img/hero.webp | 16.5 KB |\n| https://Docs.Example.TEST/app.min.js | 7.1 KB |\n| https://cdn.example-static.test/old-path | 18.8 KB |\n\n## Responses without caching headers\n\n1 response without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://img.example-media.test/collect?e=view\\&id=7 | text/html |\n\n## Compression savings\n\n228.4 KB compressed to 123.4 KB over 4 responses."
+  }
+ },
+ "23-slow-2.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n15 requests to 9 hosts, 487.8 KB transferred, 23568 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n10 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 1 |\n| 3xx | 2 |\n| 4xx | 4 |\n| 5xx | 6 |\n| other | 2 |\n\nRecorded with Example Recorder 2.1."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n10 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 500 | GET | https://fonts.example-cdn.test/logo.svg | Internal Server Error |\n| 404 | GET | https://api.example.test/search?q=a\\|b | Not Found |\n| 403 | GET | https://metrics.example-stats.test/collect?e=view\\&id=7 | Forbidden |\n| 502 | GET | https://img.example-media.test/ | Bad Gateway |\n| 404 | GET | https://cdn.example-static.test/v2/cart | Not Found |\n| 502 | DELETE | https://api.example.test/ | Bad Gateway |\n| 503 | GET | https://img.example-media.test/v2/cart | Service Unavailable |\n| 500 | GET | https://Docs.Example.TEST/fonts/inter.woff2 | Internal Server Error |\n| 503 | GET | https://img.example-media.test/app.min.js | Service Unavailable |\n| 403 | GET | https://\\[2001:db8::7\\]/index.html | Forbidden |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 2912 ms | GET | 503 | 2891 ms | https://img.example-media.test/v2/cart |\n| 2 | 2846 ms | GET | 500 | 2829 ms | https://fonts.example-cdn.test/logo.svg |\n| 3 | 2492 ms | GET | 403 | 2384 ms | https://metrics.example-stats.test/collect?e=view\\&id=7 |\n| 4 | 2367 ms | GET | 503 | 2287 ms | https://img.example-media.test/app.min.js |\n| 5 | 2281 ms | GET | 101 | 2195 ms | https://Docs.Example.TEST/img/hero.webp |\n| 6 | 2079 ms | GET | 200 | 1960 ms | https://shop.example.test/v2/checkout |\n| 7 | 1881 ms | GET | 101 | 1802 ms | https://auth.example.test/index.html |\n| 8 | 1788 ms | GET | 502 | 1742 ms | https://img.example-media.test/ |\n| 9 | 1567 ms | GET | 304 | 1513 ms | https://img.example-media.test/search?q=a\\|b |\n| 10 | 1042 ms | GET | 404 | 896 ms | https://cdn.example-static.test/v2/cart |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| img.example-media.test | 4 | 112.5 KB | 8634 ms | 2108 ms | 3 |\n| api.example.test | 3 | 19.5 KB | 1560 ms | 436 ms | 2 |\n| docs.example.test | 2 | 286.8 KB | 2877 ms | 1337 ms | 1 |\n| cdn.example-static.test | 1 | 28.5 KB | 1042 ms | 896 ms | 1 |\n| shop.example.test | 1 | 17.5 KB | 2079 ms | 1960 ms | 0 |\n| auth.example.test | 1 | 14.3 KB | 1881 ms | 1802 ms | 0 |\n| \\[2001:db8::7\\] | 1 | 3.3 KB | 156 ms | 73 ms | 1 |\n| fonts.example-cdn.test | 1 | 2.8 KB | 2846 ms | 2829 ms | 1 |\n| metrics.example-stats.test | 1 | 2.6 KB | 2492 ms | 2384 ms | 1 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n2 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://Docs.Example.TEST/img/hero.webp | 278.6 KB |\n| https://api.example.test/app.min.js | 15.3 KB |\n\n## Responses without caching headers\n\n0 responses without caching headers.\n\n## Compression savings\n\n413.9 KB compressed to 161.2 KB over 11 responses."
+  }
+ },
+ "24-slow-3.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n15 requests to 7 hosts, 77.0 KB transferred, 19682 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n6 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 6 |\n| 3xx | 2 |\n| 4xx | 1 |\n| 5xx | 4 |\n| no response | 1 |\n| other | 1 |\n\nRecorded with Example Recorder 2.1."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n6 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 503 | GET | https://\\[2001:db8::7\\]/ | Service Unavailable |\n| 0 | GET | https://auth.example.test/collect?e=view\\&id=7 |  |\n| 500 | OPTIONS | https://img.example-media.test/search?q=a\\|b | Internal Server Error |\n| 403 | GET | blob:https://shop.example.test/3b9c1d2e | Forbidden |\n| 500 | GET | https://\\[2001:db8::7\\]/v2/cart | Internal Server Error |\n| 502 | GET | https://auth.example.test/old-path | Bad Gateway |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 2196 ms | GET | 101 | 2027 ms | http://img.example-media.test/search?q=a\\|b |\n| 2 | 1979 ms | GET | 403 | 1850 ms | blob:https://shop.example.test/3b9c1d2e |\n| 3 | 1964 ms | GET | 503 | 1844 ms | https://\\[2001:db8::7\\]/ |\n| 4 | 1874 ms | GET | 502 | 1828 ms | https://auth.example.test/old-path |\n| 5 | 1472 ms | GET | 301 | 1395 ms | https://xn--bcher-kva.example.test/fonts/inter.woff2 |\n| 6 | 1453 ms | GET | 500 | 1297 ms | https://\\[2001:db8::7\\]/v2/cart |\n| 7 | 1436 ms | GET | 204 | 1404 ms | https://xn--bcher-kva.example.test/old-path |\n| 8 | 1358 ms | GET | 204 | 1324 ms | https://xn--bcher-kva.example.test/search?q=a\\|b |\n| 9 | 1258 ms | GET | 204 | 1075 ms | https://auth.example.test/old-path |\n| 10 | 1201 ms | OPTIONS | 500 | 984 ms | https://img.example-media.test/search?q=a\\|b |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| img.example-media.test | 3 | 21.3 KB | 3864 ms | 1136 ms | 1 |\n| xn--bcher-kva.example.test | 3 | 6.4 KB | 4266 ms | 1374 ms | 0 |\n| auth.example.test | 3 | 2.8 KB | 4101 ms | 1283 ms | 2 |\n| \\[2001:db8::7\\] | 2 | 20.6 KB | 3418 ms | 1571 ms | 2 |\n| metrics.example-stats.test | 1 | 10.3 KB | 908 ms | 831 ms | 0 |\n| (no host) | 1 | 8.4 KB | 1979 ms | 1850 ms | 1 |\n| shop.example.test | 1 | 7.0 KB | 74 ms | 25 ms | 0 |\n| fonts.example-cdn.test | 1 | 225 B | 1073 ms | 962 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n3 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://\\[2001:db8::7\\]/ | 16.6 KB |\n| https://img.example-media.test/index.html | 7.1 KB |\n| https://xn--bcher-kva.example.test/fonts/inter.woff2 | 5.5 KB |\n\n## Responses without caching headers\n\n3 responses without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://xn--bcher-kva.example.test/old-path | x-unknown |\n| https://auth.example.test/old-path | x-unknown |\n| https://metrics.example-stats.test/fonts/inter.woff2 | text/css |\n\n## Compression savings\n\n96.7 KB compressed to 35.8 KB over 6 responses."
+  }
+ },
+ "25-no-timings-0.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n6 requests to 4 hosts, 325.3 KB transferred, 1817 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n2 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 1 |\n| 3xx | 3 |\n| 4xx | 1 |\n| 5xx | 1 |\n\nRecorded with WebInspector 537.36."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n2 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 500 | GET | https://img.example-media.test/styles/site.css | Internal Server Error |\n| 404 | PUT | https://api.example.test/styles/site.css | Not Found |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 406 ms | GET | 302 | 0 ms | https://api.example.test/old-path |\n| 2 | 382 ms | PUT | 404 | 0 ms | https://api.example.test/styles/site.css |\n| 3 | 323 ms | GET | 302 | 0 ms | https://cdn.example-static.test/ |\n| 4 | 289 ms | POST | 302 | 0 ms | https://cdn.example-static.test/ |\n| 5 | 281 ms | GET | 500 | 0 ms | https://img.example-media.test/styles/site.css |\n| 6 | 136 ms | GET | 204 | 0 ms | https://xn--bcher-kva.example.test/data.json |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| api.example.test | 2 | 15.0 KB | 788 ms | 0 ms | 1 |\n| cdn.example-static.test | 2 | 12.3 KB | 612 ms | 0 ms | 0 |\n| img.example-media.test | 1 | 297.6 KB | 281 ms | 0 ms | 1 |\n| xn--bcher-kva.example.test | 1 | 361 B | 136 ms | 0 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n2 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://img.example-media.test/styles/site.css | 297.4 KB |\n| https://api.example.test/old-path | 2.0 KB |\n\n## Responses without caching headers\n\n0 responses without caching headers.\n\n## Compression savings\n\n45.0 KB compressed to 23.9 KB over 3 responses."
+  }
+ },
+ "26-no-timings-1.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n6 requests to 4 hosts, 51.4 KB transferred, 2014 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n2 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 1 |\n| 3xx | 3 |\n| 4xx | 1 |\n| 5xx | 1 |\n\nRecorded with WebInspector 537.36."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n2 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 500 | DELETE | https://api.example.test/v2/cart | Internal Server Error |\n| 404 | POST | https://Docs.Example.TEST/v2/cart | Not Found |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 448 ms | GET | 304 | 0 ms | https://metrics.example-stats.test/app.min.js |\n| 2 | 440 ms | DELETE | 204 | 0 ms | https://Docs.Example.TEST/collect?e=view\\&id=7 |\n| 3 | 381 ms | OPTIONS | 302 | 0 ms | https://xn--bcher-kva.example.test/ |\n| 4 | 372 ms | POST | 404 | 0 ms | https://Docs.Example.TEST/v2/cart |\n| 5 | 238 ms | DELETE | 500 | 0 ms | https://api.example.test/v2/cart |\n| 6 | 136 ms | GET | 302 | 0 ms | https://api.example.test/index.html |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| api.example.test | 2 | 41.9 KB | 374 ms | 0 ms | 1 |\n| docs.example.test | 2 | 4.6 KB | 812 ms | 0 ms | 1 |\n| xn--bcher-kva.example.test | 1 | 4.4 KB | 381 ms | 0 ms | 0 |\n| metrics.example-stats.test | 1 | 438 B | 448 ms | 0 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n0 uncompressed text responses.\n\n## Responses without caching headers\n\n1 response without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://Docs.Example.TEST/collect?e=view\\&id=7 | font/woff2 |\n\n## Compression savings\n\n40.2 KB compressed to 16.1 KB over 2 responses."
+  }
+ },
+ "27-no-timings-2.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n6 requests to 6 hosts, 311.5 KB transferred, 2019 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n3 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 1 |\n| 3xx | 2 |\n| 4xx | 1 |\n| 5xx | 2 |\n\nRecorded with Firefox 125.0."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n3 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 502 | GET | https://Docs.Example.TEST/index.html | Bad Gateway |\n| 403 | GET | https://cdn.example-static.test/v2/checkout | Forbidden |\n| 503 | GET | https://xn--bcher-kva.example.test/styles/site.css | Service Unavailable |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 465 ms | GET | 302 | 0 ms | https://img.example-media.test/logo.svg |\n| 2 | 443 ms | GET | 503 | 0 ms | https://xn--bcher-kva.example.test/styles/site.css |\n| 3 | 377 ms | GET | 200 | 0 ms | https://127.0.0.1:8080/fonts/inter.woff2 |\n| 4 | 366 ms | GET | 403 | 0 ms | https://cdn.example-static.test/v2/checkout |\n| 5 | 247 ms | GET | 302 | 0 ms | https://shop.example.test/v2/cart |\n| 6 | 121 ms | GET | 502 | 0 ms | https://Docs.Example.TEST/index.html |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| img.example-media.test | 1 | 137.2 KB | 465 ms | 0 ms | 0 |\n| docs.example.test | 1 | 130.1 KB | 121 ms | 0 ms | 1 |\n| 127.0.0.1 | 1 | 26.3 KB | 377 ms | 0 ms | 0 |\n| shop.example.test | 1 | 8.1 KB | 247 ms | 0 ms | 0 |\n| xn--bcher-kva.example.test | 1 | 6.1 KB | 443 ms | 0 ms | 1 |\n| cdn.example-static.test | 1 | 3.6 KB | 366 ms | 0 ms | 1 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n2 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://Docs.Example.TEST/index.html | 129.9 KB |\n| https://127.0.0.1:8080/fonts/inter.woff2 | 25.9 KB |\n\n## Responses without caching headers\n\n0 responses without caching headers.\n\n## Compression savings\n\n312.0 KB compressed to 153.7 KB over 4 responses."
+  }
+ },
+ "28-no-time-0.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n6 requests to 6 hosts, 447.1 KB transferred, 2096 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n4 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 1 |\n| 3xx | 1 |\n| 4xx | 1 |\n| 5xx | 3 |\n\nRecorded with Example Recorder 2.1."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n4 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 503 | GET | https://fonts.example-cdn.test/fonts/inter.woff2 | Service Unavailable |\n| 500 | GET | https://cdn.example-static.test/index.html | Internal Server Error |\n| 503 | GET | https://xn--bcher-kva.example.test/search?q=a\\|b | Service Unavailable |\n| 404 | GET | https://Docs.Example.TEST/v2/checkout | Not Found |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 515 ms | GET | 404 | 395 ms | https://Docs.Example.TEST/v2/checkout |\n| 2 | 455 ms | PUT | 204 | 370 ms | https://api.example.test/fonts/inter.woff2 |\n| 3 | 380 ms | GET | 503 | 248 ms | https://fonts.example-cdn.test/fonts/inter.woff2 |\n| 4 | 298 ms | GET | 503 | 262 ms | https://xn--bcher-kva.example.test/search?q=a\\|b |\n| 5 | 286 ms | GET | 304 | 218 ms | https://shop.example.test/data.json |\n| 6 | 163 ms | GET | 500 | 96 ms | https://cdn.example-static.test/index.html |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| docs.example.test | 1 | 364.0 KB | 515 ms | 395 ms | 1 |\n| cdn.example-static.test | 1 | 65.3 KB | 163 ms | 96 ms | 1 |\n| fonts.example-cdn.test | 1 | 12.2 KB | 380 ms | 248 ms | 1 |\n| xn--bcher-kva.example.test | 1 | 4.9 KB | 298 ms | 262 ms | 1 |\n| shop.example.test | 1 | 414 B | 286 ms | 218 ms | 0 |\n| api.example.test | 1 | 227 B | 455 ms | 370 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n2 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://fonts.example-cdn.test/fonts/inter.woff2 | 11.9 KB |\n| https://Docs.Example.TEST/v2/checkout | 363.6 KB |\n\n## Responses without caching headers\n\n0 responses without caching headers.\n\n## Compression savings\n\n260.5 KB compressed to 69.5 KB over 2 responses."
+  }
+ },
+ "29-no-time-1.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n6 requests to 3 hosts, 189.6 KB transferred, 1545 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n4 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 3xx | 2 |\n| 4xx | 1 |\n| 5xx | 2 |\n| no response | 1 |\n\nRecorded with WebKit Web Inspector 17.4."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n4 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 503 | GET | https://\\[2001:db8::7\\]/img/hero.webp | Service Unavailable |\n| 0 | PUT | https://fonts.example-cdn.test/img/hero.webp |  |\n| 502 | GET | data:image/png;base64,iVBORw0KGgo= | Bad Gateway |\n| 403 | GET | https://xn--bcher-kva.example.test/v2/checkout | Forbidden |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 444 ms | GET | 502 | 293 ms | data:image/png;base64,iVBORw0KGgo= |\n| 2 | 307 ms | PUT | 0 | 171 ms | https://fonts.example-cdn.test/img/hero.webp |\n| 3 | 218 ms | GET | 302 | 178 ms | https://\\[2001:db8::7\\]/logo.svg |\n| 4 | 217 ms | GET | 403 | 74 ms | https://xn--bcher-kva.example.test/v2/checkout |\n| 5 | 186 ms | OPTIONS | 301 | 72 ms | https://\\[2001:db8::7\\]/collect?e=view\\&id=7 |\n| 6 | 174 ms | GET | 503 | 98 ms | https://\\[2001:db8::7\\]/img/hero.webp |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| \\[2001:db8::7\\] | 3 | 181.5 KB | 578 ms | 116 ms | 1 |\n| xn--bcher-kva.example.test | 1 | 7.2 KB | 217 ms | 74 ms | 1 |\n| (no host) | 1 | 827 B | 444 ms | 293 ms | 1 |\n| fonts.example-cdn.test | 1 | 0 B | 307 ms | 171 ms | 1 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n0 uncompressed text responses.\n\n## Responses without caching headers\n\n0 responses without caching headers.\n\n## Compression savings\n\n333.6 KB compressed to 187.3 KB over 4 responses."
+  }
+ },
+ "30-no-time-2.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n6 requests to 4 hosts, 38.2 KB transferred, 1518 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n3 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 1 |\n| 3xx | 2 |\n| 4xx | 1 |\n| 5xx | 1 |\n| no response | 1 |\n\nRecorded with WebKit Web Inspector 17.4."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n3 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 404 | GET | https://Docs.Example.TEST/v2/checkout | Not Found |\n| 500 | GET | https://fonts.example-cdn.test/img/hero.webp | Internal Server Error |\n| 0 | GET | https://Docs.Example.TEST/collect?e=view\\&id=7 |  |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 463 ms | GET | 404 | 391 ms | https://Docs.Example.TEST/v2/checkout |\n| 2 | 354 ms | OPTIONS | 302 | 256 ms | http://xn--bcher-kva.example.test/collect?e=view\\&id=7 |\n| 3 | 340 ms | GET | 204 | 269 ms | https://cdn.example-static.test/img/hero.webp |\n| 4 | 203 ms | GET | 0 | 125 ms | https://Docs.Example.TEST/collect?e=view\\&id=7 |\n| 5 | 117 ms | GET | 500 | 31 ms | https://fonts.example-cdn.test/img/hero.webp |\n| 6 | 41 ms | GET | 301 | 17 ms | https://xn--bcher-kva.example.test/search?q=a\\|b |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| xn--bcher-kva.example.test | 2 | 9.6 KB | 396 ms | 136 ms | 0 |\n| docs.example.test | 2 | 6.0 KB | 665 ms | 258 ms | 2 |\n| fonts.example-cdn.test | 1 | 22.3 KB | 117 ms | 31 ms | 1 |\n| cdn.example-static.test | 1 | 294 B | 340 ms | 269 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n1 uncompressed text response.\n\n| URL | Size |\n| --- | ---: |\n| https://fonts.example-cdn.test/img/hero.webp | 22.0 KB |\n\n## Responses without caching headers\n\n0 responses without caching headers.\n\n## Compression savings\n\n33.9 KB compressed to 14.9 KB over 3 responses."
+  }
+ },
+ "31-no-creator.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n5 requests to 3 hosts, 59.1 KB transferred, 1521 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n2 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 2 |\n| 3xx | 1 |\n| 5xx | 2 |"
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n2 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 500 | GET | https://img.example-media.test/old-path | Internal Server Error |\n| 500 | GET | https://fonts.example-cdn.test/search?q=a\\|b | Internal Server Error |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 422 ms | GET | 500 | 325 ms | https://img.example-media.test/old-path |\n| 2 | 385 ms | GET | 301 | 290 ms | https://xn--bcher-kva.example.test/logo.svg |\n| 3 | 344 ms | GET | 200 | 233 ms | https://fonts.example-cdn.test/data.json |\n| 4 | 203 ms | GET | 200 | 137 ms | data:image/png;base64,iVBORw0KGgo= |\n| 5 | 166 ms | GET | 500 | 59 ms | https://fonts.example-cdn.test/search?q=a\\|b |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| fonts.example-cdn.test | 2 | 18.5 KB | 510 ms | 146 ms | 1 |\n| img.example-media.test | 1 | 27.9 KB | 422 ms | 325 ms | 1 |\n| xn--bcher-kva.example.test | 1 | 7.9 KB | 385 ms | 290 ms | 0 |\n| (no host) | 1 | 4.7 KB | 203 ms | 137 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n1 uncompressed text response.\n\n| URL | Size |\n| --- | ---: |\n| https://fonts.example-cdn.test/search?q=a\\|b | 12.5 KB |\n\n## Responses without caching headers\n\n0 responses without caching headers.\n\n## Compression savings\n\n27.5 KB compressed to 12.9 KB over 2 responses."
+  }
+ },
+ "32-one-entry.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n1 request to 0 hosts, 29.1 KB transferred, 421 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n0 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 3xx | 1 |\n\nRecorded with WebKit Web Inspector 17.4."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\nNo failed requests."
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 421 ms | GET | 301 | 368 ms | data:image/png;base64,iVBORw0KGgo= |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| (no host) | 1 | 29.1 KB | 421 ms | 368 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n0 uncompressed text responses.\n\n## Responses without caching headers\n\n0 responses without caching headers.\n\n## Compression savings\n\nNo compressed responses."
+  }
+ },
+ "33-many-entries.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n400 requests to 11 hosts, 11.9 MB transferred, 120921 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n188 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 88 |\n| 3xx | 89 |\n| 4xx | 59 |\n| 5xx | 97 |\n| no response | 32 |\n| other | 35 |\n\nRecorded with Example Recorder 2.1."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n188 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 0 | GET | https://img.example-media.test/v2/checkout |  |\n| 0 | GET | https://auth.example.test/styles/site.css |  |\n| 0 | PUT | http://xn--bcher-kva.example.test/app.min.js |  |\n| 403 | GET | https://auth.example.test/data.json | Forbidden |\n| 0 | GET | https://\\[2001:db8::7\\]/data.json |  |\n| 0 | GET | https://cdn.example-static.test/collect?e=view\\&id=7 |  |\n| 500 | GET | https://Docs.Example.TEST/collect?e=view\\&id=7 | Internal Server Error |\n| 404 | GET | https://cdn.example-static.test/search?q=a\\|b | Not Found |\n| 503 | OPTIONS | https://\\[2001:db8::7\\]/fonts/inter.woff2 | Service Unavailable |\n| 500 | GET | https://auth.example.test/index.html | Internal Server Error |\n| 503 | GET | https://fonts.example-cdn.test/index.html | Service Unavailable |\n| 500 | GET | https://Docs.Example.TEST/index.html | Internal Server Error |\n| 403 | GET | https://fonts.example-cdn.test/collect?e=view\\&id=7 | Forbidden |\n| 502 | GET | https://metrics.example-stats.test/img/hero.webp | Bad Gateway |\n| 503 | GET | http://auth.example.test/fonts/inter.woff2 | Service Unavailable |\n| 403 | GET | https://Docs.Example.TEST/v2/cart | Forbidden |\n| 502 | GET | https://127.0.0.1:8080/data.json | Bad Gateway |\n| 0 | GET | https://127.0.0.1:8080/v2/checkout |  |\n| 502 | GET | https://Docs.Example.TEST/app.min.js | Bad Gateway |\n| 503 | GET | https://shop.example.test/old-path | Service Unavailable |\n| 403 | GET | https://xn--bcher-kva.example.test/search?q=a\\|b | Forbidden |\n| 404 | GET | http://api.example.test/collect?e=view\\&id=7 | Not Found |\n| 500 | GET | https://\\[2001:db8::7\\]/index.html | Internal Server Error |\n| 0 | GET | https://metrics.example-stats.test/collect?e=view\\&id=7 |  |\n| 502 | GET | https://metrics.example-stats.test/styles/site.css | Bad Gateway |\n| 0 | PUT | https://cdn.example-static.test/fonts/inter.woff2 |  |\n| 503 | GET | https://xn--bcher-kva.example.test/data.json | Service Unavailable |\n| 502 | OPTIONS | https://127.0.0.1:8080/ | Bad Gateway |\n| 503 | GET | https://xn--bcher-kva.example.test/old-path | Service Unavailable |\n| 403 | GET | https://\\[2001:db8::7\\]/v2/cart | Forbidden |\n| 503 | GET | https://Docs.Example.TEST/collect?e=view\\&id=7 | Service Unavailable |\n| 0 | GET | http://metrics.example-stats.test/search?q=a\\|b |  |\n| 500 | GET | http://metrics.example-stats.test/v2/checkout | Internal Server Error |\n| 502 | GET | https://shop.example.test/styles/site.css | Bad Gateway |\n| 0 | GET | https://auth.example.test/v2/cart |  |\n| 404 | GET | https://cdn.example-static.test/styles/site.css | Not Found |\n| 500 | OPTIONS | https://img.example-media.test/app.min.js | Internal Server Error |\n| 503 | GET | https://img.example-media.test/fonts/inter.woff2 | Service Unavailable |\n| 503 | GET | https://cdn.example-static.test/data.json | Service Unavailable |\n| 500 | GET | https://cdn.example-static.test/img/hero.webp | Internal Server Error |\n| 0 | DELETE | https://shop.example.test/fonts/inter.woff2 |  |\n| 404 | GET | blob:https://shop.example.test/3b9c1d2e | Not Found |\n| 500 | GET | https://xn--bcher-kva.example.test/collect?e=view\\&id=7 | Internal Server Error |\n| 404 | POST | https://\\[2001:db8::7\\]/ | Not Found |\n| 500 | GET | http://shop.example.test/data.json | Internal Server Error |\n| 503 | POST | https://img.example-media.test/logo.svg | Service Unavailable |\n| 502 | GET | http://cdn.example-static.test/fonts/inter.woff2 | Bad Gateway |\n| 404 | POST | https://127.0.0.1:8080/search?q=a\\|b | Not Found |\n| 404 | GET | https://shop.example.test/old-path | Not Found |\n| 0 | GET | https://metrics.example-stats.test/img/hero.webp |  |\n| 403 | GET | https://127.0.0.1:8080/ | Forbidden |\n| 404 | OPTIONS | https://auth.example.test/fonts/inter.woff2 | Not Found |\n| 403 | GET | https://Docs.Example.TEST/v2/checkout | Forbidden |\n| 0 | GET | https://fonts.example-cdn.test/app.min.js |  |\n| 500 | GET | https://fonts.example-cdn.test/fonts/inter.woff2 | Internal Server Error |\n| 404 | GET | http://img.example-media.test/collect?e=view\\&id=7 | Not Found |\n| 502 | GET | http://fonts.example-cdn.test/collect?e=view\\&id=7 | Bad Gateway |\n| 502 | GET | https://fonts.example-cdn.test/search?q=a\\|b | Bad Gateway |\n| 503 | GET | https://xn--bcher-kva.example.test/collect?e=view\\&id=7 | Service Unavailable |\n| 403 | GET | http://cdn.example-static.test/index.html | Forbidden |\n| 500 | GET | https://metrics.example-stats.test/data.json | Internal Server Error |\n| 403 | DELETE | https://xn--bcher-kva.example.test/fonts/inter.woff2 | Forbidden |\n| 503 | GET | https://cdn.example-static.test/index.html | Service Unavailable |\n| 503 | GET | https://metrics.example-stats.test/collect?e=view\\&id=7 | Service Unavailable |\n| 403 | GET | https://fonts.example-cdn.test/v2/cart | Forbidden |\n| 403 | DELETE | https://\\[2001:db8::7\\]/data.json | Forbidden |\n| 500 | OPTIONS | https://Docs.Example.TEST/logo.svg | Internal Server Error |\n| 502 | GET | https://api.example.test/img/hero.webp | Bad Gateway |\n| 403 | GET | https://metrics.example-stats.test/ | Forbidden |\n| 0 | GET | https://xn--bcher-kva.example.test/fonts/inter.woff2 |  |\n| 0 | OPTIONS | https://xn--bcher-kva.example.test/ |  |\n| 404 | GET | https://\\[2001:db8::7\\]/search?q=a\\|b | Not Found |\n| 503 | GET | https://cdn.example-static.test/app.min.js | Service Unavailable |\n| 503 | GET | http://Docs.Example.TEST/fonts/inter.woff2 | Service Unavailable |\n| 404 | GET | https://Docs.Example.TEST/logo.svg | Not Found |\n| 502 | GET | data:image/png;base64,iVBORw0KGgo= | Bad Gateway |\n| 502 | GET | https://xn--bcher-kva.example.test/index.html | Bad Gateway |\n| 500 | POST | https://fonts.example-cdn.test/ | Internal Server Error |\n| 404 | GET | https://img.example-media.test/v2/cart | Not Found |\n| 403 | GET | https://127.0.0.1:8080/ | Forbidden |\n| 0 | GET | https://127.0.0.1:8080/ |  |\n| 503 | POST | https://img.example-media.test/styles/site.css | Service Unavailable |\n| 503 | POST | https://img.example-media.test/logo.svg | Service Unavailable |\n| 403 | GET | http://cdn.example-static.test/img/hero.webp | Forbidden |\n| 502 | GET | https://api.example.test/search?q=a\\|b | Bad Gateway |\n| 500 | GET | https://metrics.example-stats.test/index.html | Internal Server Error |\n| 0 | GET | https://shop.example.test/data.json |  |\n| 403 | PUT | https://cdn.example-static.test/ | Forbidden |\n| 404 | GET | https://auth.example.test/index.html | Not Found |\n| 503 | GET | https://api.example.test/old-path | Service Unavailable |\n| 404 | GET | https://metrics.example-stats.test/search?q=a\\|b | Not Found |\n| 403 | DELETE | blob:https://shop.example.test/3b9c1d2e | Forbidden |\n| 403 | GET | https://cdn.example-static.test/ | Forbidden |\n| 502 | GET | https://Docs.Example.TEST/data.json | Bad Gateway |\n| 503 | GET | https://api.example.test/logo.svg | Service Unavailable |\n| 502 | GET | blob:https://shop.example.test/3b9c1d2e | Bad Gateway |\n| 0 | GET | https://shop.example.test/app.min.js |  |\n| 404 | GET | https://\\[2001:db8::7\\]/data.json | Not Found |\n| 403 | PUT | blob:https://shop.example.test/3b9c1d2e | Forbidden |\n| 404 | GET | https://\\[2001:db8::7\\]/fonts/inter.woff2 | Not Found |\n| 0 | GET | https://fonts.example-cdn.test/search?q=a\\|b |  |\n| 404 | GET | https://auth.example.test/ | Not Found |\n| 0 | GET | https://xn--bcher-kva.example.test/fonts/inter.woff2 |  |\n| 404 | GET | https://fonts.example-cdn.test/ | Not Found |\n| 502 | GET | https://cdn.example-static.test/img/hero.webp | Bad Gateway |\n| 502 | PUT | https://127.0.0.1:8080/img/hero.webp | Bad Gateway |\n| 500 | GET | http://127.0.0.1:8080/search?q=a\\|b | Internal Server Error |\n| 503 | GET | https://metrics.example-stats.test/logo.svg | Service Unavailable |\n| 403 | GET | https://cdn.example-static.test/logo.svg | Forbidden |\n| 0 | GET | http://api.example.test/logo.svg |  |\n| 0 | GET | https://cdn.example-static.test/v2/checkout |  |\n| 404 | DELETE | https://cdn.example-static.test/collect?e=view\\&id=7 | Not Found |\n| 502 | GET | https://img.example-media.test/old-path | Bad Gateway |\n| 502 | GET | https://shop.example.test/logo.svg | Bad Gateway |\n| 503 | GET | https://api.example.test/styles/site.css | Service Unavailable |\n| 404 | GET | https://shop.example.test/collect?e=view\\&id=7 | Not Found |\n| 502 | GET | https://fonts.example-cdn.test/ | Bad Gateway |\n| 403 | OPTIONS | https://Docs.Example.TEST/v2/checkout | Forbidden |\n| 403 | GET | http://cdn.example-static.test/logo.svg | Forbidden |\n| 403 | GET | https://api.example.test/app.min.js | Forbidden |\n| 500 | PUT | http://shop.example.test/logo.svg | Internal Server Error |\n| 404 | OPTIONS | https://cdn.example-static.test/v2/cart | Not Found |\n| 404 | GET | https://img.example-media.test/collect?e=view\\&id=7 | Not Found |\n| 403 | GET | http://img.example-media.test/index.html | Forbidden |\n| 500 | GET | https://cdn.example-static.test/fonts/inter.woff2 | Internal Server Error |\n| 500 | DELETE | https://shop.example.test/styles/site.css | Internal Server Error |\n| 502 | DELETE | https://shop.example.test/data.json | Bad Gateway |\n| 404 | GET | https://Docs.Example.TEST/old-path | Not Found |\n| 0 | GET | https://auth.example.test/img/hero.webp |  |\n| 503 | GET | https://xn--bcher-kva.example.test/collect?e=view\\&id=7 | Service Unavailable |\n| 502 | GET | http://metrics.example-stats.test/app.min.js | Bad Gateway |\n| 503 | GET | https://\\[2001:db8::7\\]/search?q=a\\|b | Service Unavailable |\n| 503 | GET | https://\\[2001:db8::7\\]/fonts/inter.woff2 | Service Unavailable |\n| 500 | GET | https://\\[2001:db8::7\\]/ | Internal Server Error |\n| 0 | GET | https://fonts.example-cdn.test/data.json |  |\n| 0 | GET | https://auth.example.test/img/hero.webp |  |\n| 0 | GET | https://Docs.Example.TEST/search?q=a\\|b |  |\n| 403 | GET | http://fonts.example-cdn.test/data.json | Forbidden |\n| 403 | GET | https://metrics.example-stats.test/styles/site.css | Forbidden |\n| 0 | PUT | https://cdn.example-static.test/fonts/inter.woff2 |  |\n| 403 | GET | https://Docs.Example.TEST/logo.svg | Forbidden |\n| 502 | GET | https://metrics.example-stats.test/logo.svg | Bad Gateway |\n| 0 | OPTIONS | https://Docs.Example.TEST/old-path |  |\n| 502 | GET | data:image/png;base64,iVBORw0KGgo= | Bad Gateway |\n| 502 | GET | https://cdn.example-static.test/img/hero.webp | Bad Gateway |\n| 500 | GET | data:image/png;base64,iVBORw0KGgo= | Internal Server Error |\n| 500 | GET | https://xn--bcher-kva.example.test/old-path | Internal Server Error |\n| 0 | GET | https://img.example-media.test/collect?e=view\\&id=7 |  |\n| 404 | GET | https://img.example-media.test/search?q=a\\|b | Not Found |\n| 502 | GET | https://\\[2001:db8::7\\]/logo.svg | Bad Gateway |\n| 0 | POST | data:image/png;base64,iVBORw0KGgo= |  |\n| 403 | GET | https://shop.example.test/v2/checkout | Forbidden |\n| 403 | GET | https://auth.example.test/ | Forbidden |\n| 500 | PUT | https://\\[2001:db8::7\\]/styles/site.css | Internal Server Error |\n| 503 | GET | https://img.example-media.test/index.html | Service Unavailable |\n| 502 | GET | https://shop.example.test/app.min.js | Bad Gateway |\n| 0 | OPTIONS | https://cdn.example-static.test/collect?e=view\\&id=7 |  |\n| 500 | OPTIONS | https://\\[2001:db8::7\\]/ | Internal Server Error |\n| 404 | GET | https://img.example-media.test/img/hero.webp | Not Found |\n| 502 | OPTIONS | http://Docs.Example.TEST/data.json | Bad Gateway |\n| 500 | GET | blob:https://shop.example.test/3b9c1d2e | Internal Server Error |\n| 503 | OPTIONS | https://\\[2001:db8::7\\]/old-path | Service Unavailable |\n| 500 | OPTIONS | https://fonts.example-cdn.test/old-path | Internal Server Error |\n| 503 | GET | https://metrics.example-stats.test/search?q=a\\|b | Service Unavailable |\n| 500 | GET | https://127.0.0.1:8080/ | Internal Server Error |\n| 502 | GET | https://shop.example.test/old-path | Bad Gateway |\n| 500 | GET | https://xn--bcher-kva.example.test/fonts/inter.woff2 | Internal Server Error |\n| 500 | GET | https://Docs.Example.TEST/app.min.js | Internal Server Error |\n| 503 | GET | https://shop.example.test/old-path | Service Unavailable |\n| 503 | GET | https://auth.example.test/index.html | Service Unavailable |\n| 502 | GET | https://fonts.example-cdn.test/img/hero.webp | Bad Gateway |\n| 404 | GET | https://Docs.Example.TEST/v2/checkout | Not Found |\n| 503 | GET | https://xn--bcher-kva.example.test/logo.svg | Service Unavailable |\n| 502 | GET | http://\\[2001:db8::7\\]/v2/cart | Bad Gateway |\n| 403 | GET | http://auth.example.test/old-path | Forbidden |\n| 503 | OPTIONS | http://127.0.0.1:8080/v2/checkout | Service Unavailable |\n| 0 | GET | https://metrics.example-stats.test/styles/site.css |  |\n| 500 | GET | https://shop.example.test/styles/site.css | Internal Server Error |\n| 500 | GET | https://cdn.example-static.test/v2/cart | Internal Server Error |\n| 500 | GET | https://Docs.Example.TEST/fonts/inter.woff2 | Internal Server Error |\n| 403 | GET | https://cdn.example-static.test/v2/cart | Forbidden |\n| 503 | GET | https://cdn.example-static.test/index.html | Service Unavailable |\n| 503 | GET | blob:https://shop.example.test/3b9c1d2e | Service Unavailable |\n| 403 | GET | blob:https://shop.example.test/3b9c1d2e | Forbidden |\n| 500 | GET | https://metrics.example-stats.test/app.min.js | Internal Server Error |\n| 404 | GET | https://shop.example.test/v2/cart | Not Found |\n| 500 | GET | https://img.example-media.test/index.html | Internal Server Error |\n| 404 | GET | https://img.example-media.test/index.html | Not Found |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 609 ms | GET | 302 | 392 ms | https://\\[2001:db8::7\\]/index.html |\n| 2 | 587 ms | GET | 200 | 354 ms | https://fonts.example-cdn.test/styles/site.css |\n| 3 | 586 ms | GET | 302 | 386 ms | http://fonts.example-cdn.test/logo.svg |\n| 4 | 564 ms | POST | 200 | 383 ms | https://127.0.0.1:8080/collect?e=view\\&id=7 |\n| 5 | 556 ms | GET | 503 | 397 ms | https://metrics.example-stats.test/logo.svg |\n| 6 | 516 ms | GET | 302 | 377 ms | https://shop.example.test/styles/site.css |\n| 7 | 515 ms | GET | 200 | 365 ms | https://shop.example.test/ |\n| 8 | 514 ms | GET | 101 | 371 ms | https://Docs.Example.TEST/data.json |\n| 9 | 513 ms | GET | 403 | 376 ms | http://cdn.example-static.test/index.html |\n| 10 | 513 ms | GET | 502 | 395 ms | https://cdn.example-static.test/img/hero.webp |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| metrics.example-stats.test | 46 | 1.6 MB | 13978 ms | 208 ms | 18 |\n| docs.example.test | 42 | 1.0 MB | 12508 ms | 198 ms | 19 |\n| cdn.example-static.test | 42 | 930.6 KB | 12578 ms | 200 ms | 26 |\n| fonts.example-cdn.test | 37 | 1.5 MB | 11716 ms | 207 ms | 15 |\n| img.example-media.test | 37 | 1.4 MB | 9757 ms | 166 ms | 17 |\n| \\[2001:db8::7\\] | 37 | 1.2 MB | 12309 ms | 229 ms | 17 |\n| shop.example.test | 36 | 1.1 MB | 11804 ms | 230 ms | 18 |\n| 127.0.0.1 | 30 | 933.6 KB | 8822 ms | 206 ms | 11 |\n| xn--bcher-kva.example.test | 25 | 423.6 KB | 7466 ms | 203 ms | 15 |\n| (no host) | 24 | 653.3 KB | 7101 ms | 190 ms | 11 |\n| api.example.test | 22 | 724.5 KB | 6672 ms | 190 ms | 8 |\n| auth.example.test | 22 | 573.1 KB | 6210 ms | 181 ms | 13 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n82 uncompressed text responses.\n\n| URL | Size |\n| --- | ---: |\n| https://shop.example.test/img/hero.webp | 16.9 KB |\n| https://cdn.example-static.test/index.html | 13.1 KB |\n| https://img.example-media.test/ | 20.1 KB |\n| https://img.example-media.test/old-path | 28.9 KB |\n| https://metrics.example-stats.test/img/hero.webp | 15.1 KB |\n| https://shop.example.test/ | 284.1 KB |\n| https://Docs.Example.TEST/app.min.js | 16.0 KB |\n| http://metrics.example-stats.test/search?q=a\\|b | 12.4 KB |\n| https://xn--bcher-kva.example.test/search?q=a\\|b | 10.6 KB |\n| https://cdn.example-static.test/data.json | 12.4 KB |\n| https://metrics.example-stats.test/styles/site.css | 2.9 KB |\n| http://cdn.example-static.test/collect?e=view\\&id=7 | 7.9 KB |\n| https://xn--bcher-kva.example.test/old-path | 20.2 KB |\n| https://auth.example.test/styles/site.css | 10.6 KB |\n| https://img.example-media.test/app.min.js | 22.1 KB |\n| https://img.example-media.test/fonts/inter.woff2 | 4.0 KB |\n| https://fonts.example-cdn.test/v2/checkout | 19.3 KB |\n| https://Docs.Example.TEST/logo.svg | 15.0 KB |\n| https://fonts.example-cdn.test/index.html | 352.9 KB |\n| https://127.0.0.1:8080/ | 11.4 KB |\n| https://auth.example.test/fonts/inter.woff2 | 24.1 KB |\n| https://127.0.0.1:8080/index.html | 23.5 KB |\n| https://img.example-media.test/old-path | 313.7 KB |\n| http://auth.example.test/old-path | 22.9 KB |\n| https://fonts.example-cdn.test/search?q=a\\|b | 22.0 KB |\n| https://cdn.example-static.test/index.html | 11.7 KB |\n| https://fonts.example-cdn.test/v2/cart | 22.9 KB |\n| https://api.example.test/img/hero.webp | 304.2 KB |\n| https://Docs.Example.TEST/fonts/inter.woff2 | 2.5 KB |\n| http://Docs.Example.TEST/fonts/inter.woff2 | 10.0 KB |\n| https://shop.example.test/fonts/inter.woff2 | 23.7 KB |\n| https://Docs.Example.TEST/logo.svg | 9.1 KB |\n| https://fonts.example-cdn.test/ | 4.4 KB |\n| https://127.0.0.1:8080/old-path | 2.0 KB |\n| http://fonts.example-cdn.test/index.html | 27.3 KB |\n| https://img.example-media.test/styles/site.css | 9.3 KB |\n| https://api.example.test/v2/checkout | 210.2 KB |\n| https://img.example-media.test/collect?e=view\\&id=7 | 10.9 KB |\n| https://cdn.example-static.test/ | 16.2 KB |\n| https://metrics.example-stats.test/app.min.js | 19.1 KB |\n| https://\\[2001:db8::7\\]/fonts/inter.woff2 | 13.2 KB |\n| https://auth.example.test/ | 24.2 KB |\n| https://api.example.test/app.min.js | 18.4 KB |\n| https://fonts.example-cdn.test/ | 45.1 KB |\n| https://127.0.0.1:8080/collect?e=view\\&id=7 | 173.5 KB |\n| https://cdn.example-static.test/collect?e=view\\&id=7 | 22.8 KB |\n| https://img.example-media.test/old-path | 27.6 KB |\n| https://api.example.test/styles/site.css | 10.8 KB |\n| https://cdn.example-static.test/search?q=a\\|b | 116.9 KB |\n| https://api.example.test/old-path | 17.0 KB |\n| http://shop.example.test/old-path | 10.8 KB |\n| https://cdn.example-static.test/v2/cart | 7.5 KB |\n| https://fonts.example-cdn.test/v2/cart | 371.6 KB |\n| https://\\[2001:db8::7\\]/search?q=a\\|b | 9.4 KB |\n| https://cdn.example-static.test/fonts/inter.woff2 | 5.3 KB |\n| https://cdn.example-static.test/index.html | 24.2 KB |\n| https://\\[2001:db8::7\\]/search?q=a\\|b | 15.1 KB |\n| https://Docs.Example.TEST/ | 27.6 KB |\n| https://\\[2001:db8::7\\]/search?q=a\\|b | 18.9 KB |\n| https://\\[2001:db8::7\\]/fonts/inter.woff2 | 1.8 KB |\n| https://Docs.Example.TEST/old-path | 177.8 KB |\n| https://metrics.example-stats.test/styles/site.css | 305.1 KB |\n| https://Docs.Example.TEST/logo.svg | 13.7 KB |\n| https://xn--bcher-kva.example.test/v2/checkout | 8.8 KB |\n| https://metrics.example-stats.test/logo.svg | 372.8 KB |\n| https://\\[2001:db8::7\\]/logo.svg | 6.1 KB |\n| https://metrics.example-stats.test/v2/checkout | 9.1 KB |\n| https://shop.example.test/v2/checkout | 29.1 KB |\n| http://127.0.0.1:8080/v2/checkout | 306.8 KB |\n| https://\\[2001:db8::7\\]/styles/site.css | 16.1 KB |\n| http://Docs.Example.TEST/data.json | 22.5 KB |\n| https://\\[2001:db8::7\\]/old-path | 14.5 KB |\n| https://metrics.example-stats.test/fonts/inter.woff2 | 1.1 KB |\n| https://fonts.example-cdn.test/app.min.js | 5.9 KB |\n| https://shop.example.test/old-path | 24.0 KB |\n| http://\\[2001:db8::7\\]/v2/cart | 1.8 KB |\n| https://auth.example.test/ | 23.1 KB |\n| https://fonts.example-cdn.test/index.html | 4.9 KB |\n| https://cdn.example-static.test/v2/cart | 11.2 KB |\n| http://xn--bcher-kva.example.test/ | 9.0 KB |\n| https://cdn.example-static.test/v2/cart | 67.1 KB |\n| https://shop.example.test/v2/cart | 11.7 KB |\n\n## Responses without caching headers\n\n23 responses without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://cdn.example-static.test/index.html | image/svg\\+xml |\n| https://metrics.example-stats.test/img/hero.webp | image/png |\n| http://metrics.example-stats.test/search?q=a\\|b | image/svg\\+xml |\n| http://fonts.example-cdn.test/v2/checkout | text/html |\n| https://fonts.example-cdn.test/index.html | text/plain |\n| http://auth.example.test/old-path | text/css |\n| https://127.0.0.1:8080/v2/cart | text/html |\n| https://shop.example.test/fonts/inter.woff2 | application/javascript |\n| https://fonts.example-cdn.test/styles/site.css | x-unknown |\n| https://cdn.example-static.test/search?q=a\\|b | image/png |\n| https://metrics.example-stats.test/fonts/inter.woff2 | x-unknown |\n| http://cdn.example-static.test/v2/cart | font/woff2 |\n| https://metrics.example-stats.test/app.min.js | image/svg\\+xml |\n| https://\\[2001:db8::7\\]/old-path | image/png |\n| http://127.0.0.1:8080/data.json | x-unknown |\n| https://img.example-media.test/img/hero.webp | x-unknown |\n| https://cdn.example-static.test/ | image/webp |\n| http://metrics.example-stats.test/search?q=a\\|b | x-unknown |\n| https://Docs.Example.TEST/old-path | image/svg\\+xml |\n| http://fonts.example-cdn.test/old-path | image/svg\\+xml |\n| https://fonts.example-cdn.test/index.html | application/json |\n| https://xn--bcher-kva.example.test/logo.svg | x-unknown |\n| https://fonts.example-cdn.test/collect?e=view\\&id=7 | text/plain |\n\n## Compression savings\n\n8.2 MB compressed to 3.3 MB over 148 responses."
+  }
+ },
+ "34-crlf.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n4 requests to 4 hosts, 26.5 KB transferred, 1089 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n3 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 1 |\n| 5xx | 2 |\n| no response | 1 |\n\nRecorded with WebInspector 537.36."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n3 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 500 | GET | https://cdn.example-static.test/ | Internal Server Error |\n| 0 | GET | https://\\[2001:db8::7\\]/old-path |  |\n| 502 | GET | https://img.example-media.test/app.min.js | Bad Gateway |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 392 ms | POST | 204 | 222 ms | https://shop.example.test/styles/site.css |\n| 2 | 342 ms | GET | 502 | 323 ms | https://img.example-media.test/app.min.js |\n| 3 | 219 ms | GET | 500 | 103 ms | https://cdn.example-static.test/ |\n| 4 | 135 ms | GET | 0 | 48 ms | https://\\[2001:db8::7\\]/old-path |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| cdn.example-static.test | 1 | 19.8 KB | 219 ms | 103 ms | 1 |\n| img.example-media.test | 1 | 6.4 KB | 342 ms | 323 ms | 1 |\n| shop.example.test | 1 | 235 B | 392 ms | 222 ms | 0 |\n| \\[2001:db8::7\\] | 1 | 0 B | 135 ms | 48 ms | 1 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n0 uncompressed text responses.\n\n## Responses without caching headers\n\n0 responses without caching headers.\n\n## Compression savings\n\n20.4 KB compressed to 6.2 KB over 1 response."
+  }
+ },
+ "35-bom.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n4 requests to 3 hosts, 11.3 KB transferred, 891 ms summed over all requests.\n\nPage load (onLoad of the first page): 1640 ms.\n\n3 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 1 |\n| 4xx | 1 |\n| 5xx | 1 |\n| no response | 1 |\n\nRecorded with WebKit Web Inspector 17.4."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n3 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 503 | GET | https://xn--bcher-kva.example.test/index.html | Service Unavailable |\n| 0 | PUT | http://\\[2001:db8::7\\]/old-path |  |\n| 403 | POST | https://auth.example.test/logo.svg | Forbidden |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 309 ms | GET | 204 | 154 ms | https://xn--bcher-kva.example.test/img/hero.webp |\n| 2 | 223 ms | POST | 403 | 148 ms | https://auth.example.test/logo.svg |\n| 3 | 198 ms | GET | 503 | 135 ms | https://xn--bcher-kva.example.test/index.html |\n| 4 | 160 ms | PUT | 0 | 148 ms | http://\\[2001:db8::7\\]/old-path |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| xn--bcher-kva.example.test | 2 | 4.2 KB | 507 ms | 145 ms | 1 |\n| auth.example.test | 1 | 7.1 KB | 223 ms | 148 ms | 1 |\n| \\[2001:db8::7\\] | 1 | 0 B | 160 ms | 148 ms | 1 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n0 uncompressed text responses.\n\n## Responses without caching headers\n\n1 response without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://xn--bcher-kva.example.test/img/hero.webp | application/json |\n\n## Compression savings\n\n22.6 KB compressed to 10.6 KB over 2 responses."
+  }
+ },
+ "36-empty-entries.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\nThe HAR file contains no requests."
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\nThe HAR file contains no requests."
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\nThe HAR file contains no requests."
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\nThe HAR file contains no requests."
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\nThe HAR file contains no requests."
+  }
+ },
+ "37-entries-not-array.har": {
+  "reportSummary": {
+   "startsWith": "# HAR Summary\n\nThis file is not a valid HAR file"
+  },
+  "reportFailedRequests": {
+   "startsWith": "# Failed Requests\n\nThis file is not a valid HAR file"
+  },
+  "reportSlowestRequests": {
+   "startsWith": "# Slowest Requests\n\nThis file is not a valid HAR file"
+  },
+  "reportHostBreakdown": {
+   "startsWith": "# Host Breakdown\n\nThis file is not a valid HAR file"
+  },
+  "reportCachingCompression": {
+   "startsWith": "# Caching and Compression\n\nThis file is not a valid HAR file"
+  }
+ },
+ "38-no-log.har": {
+  "reportSummary": {
+   "startsWith": "# HAR Summary\n\nThis file is not a valid HAR file"
+  },
+  "reportFailedRequests": {
+   "startsWith": "# Failed Requests\n\nThis file is not a valid HAR file"
+  },
+  "reportSlowestRequests": {
+   "startsWith": "# Slowest Requests\n\nThis file is not a valid HAR file"
+  },
+  "reportHostBreakdown": {
+   "startsWith": "# Host Breakdown\n\nThis file is not a valid HAR file"
+  },
+  "reportCachingCompression": {
+   "startsWith": "# Caching and Compression\n\nThis file is not a valid HAR file"
+  }
+ },
+ "39-truncated.har": {
+  "reportSummary": {
+   "startsWith": "# HAR Summary\n\nThis file is not a valid HAR file"
+  },
+  "reportFailedRequests": {
+   "startsWith": "# Failed Requests\n\nThis file is not a valid HAR file"
+  },
+  "reportSlowestRequests": {
+   "startsWith": "# Slowest Requests\n\nThis file is not a valid HAR file"
+  },
+  "reportHostBreakdown": {
+   "startsWith": "# Host Breakdown\n\nThis file is not a valid HAR file"
+  },
+  "reportCachingCompression": {
+   "startsWith": "# Caching and Compression\n\nThis file is not a valid HAR file"
+  }
+ },
+ "40-blank.har": {
+  "reportSummary": {
+   "startsWith": "# HAR Summary\n\nThis file is not a valid HAR file"
+  },
+  "reportFailedRequests": {
+   "startsWith": "# Failed Requests\n\nThis file is not a valid HAR file"
+  },
+  "reportSlowestRequests": {
+   "startsWith": "# Slowest Requests\n\nThis file is not a valid HAR file"
+  },
+  "reportHostBreakdown": {
+   "startsWith": "# Host Breakdown\n\nThis file is not a valid HAR file"
+  },
+  "reportCachingCompression": {
+   "startsWith": "# Caching and Compression\n\nThis file is not a valid HAR file"
+  }
+ },
+ "41-not-json.har": {
+  "reportSummary": {
+   "startsWith": "# HAR Summary\n\nThis file is not a valid HAR file"
+  },
+  "reportFailedRequests": {
+   "startsWith": "# Failed Requests\n\nThis file is not a valid HAR file"
+  },
+  "reportSlowestRequests": {
+   "startsWith": "# Slowest Requests\n\nThis file is not a valid HAR file"
+  },
+  "reportHostBreakdown": {
+   "startsWith": "# Host Breakdown\n\nThis file is not a valid HAR file"
+  },
+  "reportCachingCompression": {
+   "startsWith": "# Caching and Compression\n\nThis file is not a valid HAR file"
+  }
+ },
+ "42-array-root.har": {
+  "reportSummary": {
+   "startsWith": "# HAR Summary\n\nThis file is not a valid HAR file"
+  },
+  "reportFailedRequests": {
+   "startsWith": "# Failed Requests\n\nThis file is not a valid HAR file"
+  },
+  "reportSlowestRequests": {
+   "startsWith": "# Slowest Requests\n\nThis file is not a valid HAR file"
+  },
+  "reportHostBreakdown": {
+   "startsWith": "# Host Breakdown\n\nThis file is not a valid HAR file"
+  },
+  "reportCachingCompression": {
+   "startsWith": "# Caching and Compression\n\nThis file is not a valid HAR file"
+  }
+ },
+ "43-null-entries-items.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n2 requests to 0 hosts, 0 B transferred, 0 ms summed over all requests.\n\n2 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| no response | 2 |"
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\n2 failed requests.\n\n| Status | Method | URL | Status text |\n| --- | --- | --- | --- |\n| 0 | - | - |  |\n| 0 | - | - |  |"
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 0 ms | - | 0 | 0 ms | - |\n| 2 | 0 ms | - | 0 | 0 ms | - |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| (no host) | 2 | 0 B | 0 ms | 0 ms | 2 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n0 uncompressed text responses.\n\n## Responses without caching headers\n\n0 responses without caching headers.\n\n## Compression savings\n\nNo compressed responses."
+  }
+ },
+ "44-string-numbers.har": {
+  "reportSummary": {
+   "exact": "# HAR Summary\n\n1 request to 1 host, 15 B transferred, 120 ms summed over all requests.\n\n0 failed requests (no response, or status 400 and above).\n\n| Status | Requests |\n| --- | ---: |\n| 2xx | 1 |"
+  },
+  "reportFailedRequests": {
+   "exact": "# Failed Requests\n\nNo failed requests."
+  },
+  "reportSlowestRequests": {
+   "exact": "# Slowest Requests\n\n| # | Time | Method | Status | Wait | URL |\n| ---: | ---: | --- | ---: | ---: | --- |\n| 1 | 120 ms | GET | 200 | 0 ms | https://a.example.test/ |"
+  },
+  "reportHostBreakdown": {
+   "exact": "# Host Breakdown\n\n| Host | Requests | Transferred | Time | Avg wait | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| a.example.test | 1 | 15 B | 120 ms | 0 ms | 0 |"
+  },
+  "reportCachingCompression": {
+   "exact": "# Caching and Compression\n\n## Uncompressed text responses\n\n0 uncompressed text responses.\n\n## Responses without caching headers\n\n1 response without caching headers.\n\n| URL | Type |\n| --- | --- |\n| https://a.example.test/ | text/html |\n\n## Compression savings\n\nNo compressed responses."
+  }
+ }
+}
