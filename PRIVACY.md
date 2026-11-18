@@ -1,13 +1,13 @@
 # Privacy
 
-Last updated: 2026-11-18 (HAR Atlas 0.1.0)
+Last updated: 2026-11-18 (HAR Atlas 0.1.1)
 
 HAR Atlas works on your computer. This page states exactly what the extension stores and what it sends over the network, which is very little.
 
 ## What stays on your computer
 
 * The contents and names of your files. Every report is created locally from the text of the active editor, and nothing about it is sent anywhere.
-* The free 14-day trial of the Pro features. Its start time, the time it was last used and the time of the last reminder are kept in the editor's extension storage on this computer. Nothing about the trial is sent anywhere, not even to the payment provider, and it needs no account.
+* The free 14-day trial of the Pro features. Its start time, the time it was last used, the time of the last reminder and, once it is over, its end time are kept in the editor's extension storage on this computer. Nothing about the trial is sent anywhere, not even to the payment provider, and it needs no account.
 * There is **no telemetry**, no usage statistics, no crash reporting and no advertising.
 
 ## The one network request: the licence check (Pro only)
@@ -42,14 +42,14 @@ When it happens:
 ## What is stored locally
 
 * The licence key, in VS Code's secret storage (your operating system's credential store where available).
-* The activation id, the product id, the time of the last check and the time of the last successful validation, in VS Code's extension storage.
-* The trial record (start, last use, last reminder), in VS Code's extension storage.
+* The activation id, the product id, the time and the result (valid or not) of the last check, and the time of the last successful validation, in VS Code's extension storage.
+* The trial record (start, last use, last reminder, end), in VS Code's extension storage.
 
 **Remove Licence From This Machine** deletes the key and the activation data and frees the activation. The trial record is kept, so that the trial is not started again.
 
 ## Report A Problem
 
-**HAR Atlas: Report A Problem** copies a short diagnostics block to your clipboard and opens the public issues page in your browser. The block contains the extension and editor versions, the operating system, the language and the size in characters of the active file, the two HAR Atlas settings and the licence state (Free, Trial or Pro). It never contains file contents, file names, paths, values from a file, the licence key, user or computer names. Nothing is sent until you paste it into an issue yourself.
+**HAR Atlas: Report A Problem** copies a short diagnostics block to your clipboard and opens the public issues page in your browser. The block contains the extension and editor versions, the operating system with its release and architecture, the Node.js version of the editor, the language and the size (in characters) of the active document, the two HAR Atlas settings, and the licence state (Free, Trial or Pro, with the licence type and the trial days left). It never contains file contents, file names, paths, values from a file, the licence key, user or computer names. Nothing is sent until you paste it into an issue yourself.
 
 ## Buying
 

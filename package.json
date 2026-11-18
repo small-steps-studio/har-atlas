@@ -2,7 +2,7 @@
   "name": "har-atlas",
   "displayName": "HAR Atlas",
   "description": "HAR (HTTP Archive) files from browser DevTools: summary, failed and slowest requests with timings. Pro: host breakdown, caching and compression review. Works offline.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "SmallStepsStudio",
   "license": "SEE LICENSE IN LICENSE.txt",
   "icon": "media/icon.png",

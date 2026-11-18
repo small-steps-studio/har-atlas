@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+* The privacy statement now lists every item of the Report A Problem block (operating system release and architecture, Node.js version, licence type and trial days left) and the stored end time of the trial.
+
 ## 0.1.0
 
 First release.
