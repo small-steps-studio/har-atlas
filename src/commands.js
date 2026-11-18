@@ -23,7 +23,10 @@ function registerCommands(app) {
   // Builds a report from the text of the editor and opens it as a new Markdown document (and its preview when the
   // setting harAtlas.openReportsAsPreview is on). The file itself is never changed.
   async function showReport(editor, title, build, fileName) {
-    const markdown = build(editor.document.getText());
+    // The core gets the text and, as optional context, the file's base name (for example to recognise drop-in files).
+    const doc0 = editor.document;
+    const sourceName = String((doc0.uri && doc0.uri.path) || doc0.fileName || '').split(/[\\/]/).pop();
+    const markdown = build(doc0.getText(), { fileName: sourceName });
     const doc = await ui.openText(markdown, 'markdown', fileName);
     if (app.getSettings().openReportsAsPreview) {
       await vscode.commands.executeCommand('markdown.showPreview', doc.uri).then(undefined, function () { /* the Markdown editor stays open */ });
