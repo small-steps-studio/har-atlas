@@ -1,26 +1,34 @@
 'use strict';
-// Large files: a 50 MB input built by test/helpers/large-input.js. Every report must finish, return a report and keep the
-// memory of the process well under 1 GB.
+// Large files: a 50 MB input built by test/helpers/large-input.js. Every report must finish and return a report inside a
+// process whose JavaScript heap is capped at 1 GB (the process would crash if a report needed more).
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const core = require('../src/core');
-const { make } = require('./helpers/large-input');
+const path = require('node:path');
+const cp = require('node:child_process');
 
-const reports = Object.keys(core).filter((k) => /^report/.test(k));
+const CHILD = `
+const core = require(${JSON.stringify(path.join(__dirname, '..', 'src', 'core.js'))});
+const { make } = require(${JSON.stringify(path.join(__dirname, 'helpers', 'large-input.js'))});
+const text = make(50 * 1024 * 1024);
+const out = { size: text.length, reports: {} };
+for (const r of Object.keys(core).filter((k) => /^report/.test(k))) {
+  const t0 = Date.now();
+  const md = core[r](text);
+  out.reports[r] = { ms: Date.now() - t0, ok: typeof md === 'string' && md.startsWith('# '), length: md.length };
+}
+out.heapMB = Math.round(process.memoryUsage().heapUsed / 1048576);
+process.stdout.write(JSON.stringify(out));
+`;
 
-test('every report reads a 50 MB file within the time and memory budget', () => {
-  const text = make(50 * 1024 * 1024);
-  assert.ok(text.length >= 50 * 1024 * 1024 * 0.95, 'input size ' + text.length);
+test('every report reads a 50 MB file inside a 1 GB heap, in time', () => {
+  const r = cp.spawnSync(process.execPath, ['--max-old-space-size=1024', '-e', CHILD], { encoding: 'utf8', maxBuffer: 16 * 1024 * 1024, windowsHide: true, timeout: 15 * 60 * 1000 });
+  assert.equal(r.status, 0, 'the capped process failed (heap limit or error): ' + String(r.stderr).slice(-600));
+  const out = JSON.parse(r.stdout);
+  assert.ok(out.size >= 50 * 1024 * 1024 * 0.95, 'input size ' + out.size);
   const budget = process.env.CI ? 120000 : 60000;
-  for (const r of reports) {
-    const t0 = Date.now();
-    const md = core[r](text);
-    const ms = Date.now() - t0;
-    assert.equal(typeof md, 'string', r);
-    assert.ok(md.startsWith('# '), r);
-    assert.ok(ms < budget, r + ' took ' + ms + ' ms');
-    assert.ok(md.length < 20 * 1024 * 1024, r + ' produced a report of ' + md.length + ' characters');
+  for (const [name, rep] of Object.entries(out.reports)) {
+    assert.ok(rep.ok, name + ' did not return a report');
+    assert.ok(rep.ms < budget, name + ' took ' + rep.ms + ' ms');
+    assert.ok(rep.length < 20 * 1024 * 1024, name + ' produced ' + rep.length + ' characters');
   }
-  if (global.gc) global.gc();
-  assert.ok(process.memoryUsage().rss < 1024 * 1024 * 1024 * 1.5, 'resident memory ' + Math.round(process.memoryUsage().rss / 1048576) + ' MB');
 });
