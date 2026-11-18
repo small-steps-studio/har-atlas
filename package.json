@@ -1,0 +1,221 @@
+{
+  "name": "har-atlas",
+  "displayName": "HAR Atlas",
+  "description": "HAR (HTTP Archive) files from browser DevTools: summary, failed and slowest requests with timings. Pro: host breakdown, caching and compression review. Works offline.",
+  "version": "0.1.0",
+  "publisher": "SmallStepsStudio",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "icon": "media/icon.png",
+  "pricing": "Trial",
+  "homepage": "https://github.com/small-steps-studio/har-atlas#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/small-steps-studio/har-atlas"
+  },
+  "bugs": {
+    "url": "https://github.com/small-steps-studio/har-atlas/issues"
+  },
+  "galleryBanner": {
+    "color": "#14324a",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Debuggers",
+    "Visualization",
+    "Other"
+  ],
+  "keywords": [
+    "har",
+    "har file",
+    "har viewer",
+    "har analyzer",
+    "http archive",
+    "network log",
+    "devtools",
+    "network panel",
+    "slow requests",
+    "failed requests",
+    "page load",
+    "web performance",
+    "ttfb",
+    "time to first byte",
+    "caching headers",
+    "compression",
+    "gzip",
+    "brotli",
+    "cache-control",
+    "http errors",
+    "status codes",
+    "har report",
+    "support tickets",
+    "troubleshooting"
+  ],
+  "main": "./src/extension.js",
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    },
+    "virtualWorkspaces": true
+  },
+  "activationEvents": [],
+  "scripts": {
+    "test": "node scripts/run-tests.js",
+    "gate": "node scripts/release-gate.js",
+    "vscode:prepublish": "node scripts/release-gate.js --skip-tests",
+    "package": "npx --yes @vscode/vsce package --no-dependencies",
+    "package:local": "node scripts/package-local.js",
+    "check-vsix": "node scripts/check-vsix.js"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "harAtlas.showSummary",
+        "title": "HAR Atlas: Show Summary",
+        "icon": "$(graph)"
+      },
+      {
+        "command": "harAtlas.showFailedRequests",
+        "title": "HAR Atlas: Show Failed Requests"
+      },
+      {
+        "command": "harAtlas.showSlowestRequests",
+        "title": "HAR Atlas: Show Slowest Requests"
+      },
+      {
+        "command": "harAtlas.showHostBreakdown",
+        "title": "HAR Atlas: Show Host Breakdown (Pro)"
+      },
+      {
+        "command": "harAtlas.showCachingCompression",
+        "title": "HAR Atlas: Show Caching And Compression (Pro)"
+      },
+      {
+        "command": "harAtlas.openSample",
+        "title": "HAR Atlas: Open Sample File"
+      },
+      {
+        "command": "harAtlas.openWalkthrough",
+        "title": "HAR Atlas: Open Walkthrough"
+      },
+      {
+        "command": "harAtlas.showDocumentation",
+        "title": "HAR Atlas: Show Documentation"
+      },
+      {
+        "command": "harAtlas.reportProblem",
+        "title": "HAR Atlas: Report A Problem"
+      },
+      {
+        "command": "harAtlas.buyPro",
+        "title": "HAR Atlas: Buy Pro"
+      },
+      {
+        "command": "harAtlas.enterKey",
+        "title": "HAR Atlas: Enter Licence Key"
+      },
+      {
+        "command": "harAtlas.licenceStatus",
+        "title": "HAR Atlas: Show Licence Status"
+      },
+      {
+        "command": "harAtlas.removeLicence",
+        "title": "HAR Atlas: Remove Licence From This Machine"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "harAtlas.showSummary",
+          "when": "resourceExtname == .har",
+          "group": "navigation@90"
+        }
+      ]
+    },
+    "walkthroughs": [
+      {
+        "id": "gettingStarted",
+        "title": "Get started with HAR Atlas",
+        "description": "Open a sample HAR file, see the summary, the failed and the slowest requests, and try the Pro host breakdown and caching review in the free 14-day trial.",
+        "steps": [
+          {
+            "id": "harAtlas.step.openSample",
+            "title": "Open a sample file",
+            "description": "HAR Atlas reads HAR files: the JSON file a browser's network panel saves with every request, its timings, sizes and headers. Open the invented sample to follow along, or open a HAR file of your own.\n[Open Sample File](command:harAtlas.openSample)",
+            "media": {
+              "markdown": "media/walkthrough/open-sample.md"
+            },
+            "completionEvents": [
+              "onCommand:harAtlas.openSample"
+            ]
+          },
+          {
+            "id": "harAtlas.step.free",
+            "title": "Run Show Summary",
+            "description": "The whole capture at a glance: how many requests went to how many hosts, how much was transferred, how many failed and the browser's page load time. The report opens as a new Markdown document; your file is not changed.\n[Show Summary](command:harAtlas.showSummary)",
+            "media": {
+              "markdown": "media/walkthrough/free.md"
+            },
+            "completionEvents": [
+              "onCommand:harAtlas.showSummary"
+            ]
+          },
+          {
+            "id": "harAtlas.step.more",
+            "title": "Use the other free reports",
+            "description": "Every free report works without a key, an account or a network connection: Show Failed Requests, Show Slowest Requests.\n[Show Failed Requests](command:harAtlas.showFailedRequests)\n[Show Slowest Requests](command:harAtlas.showSlowestRequests)",
+            "media": {
+              "markdown": "media/walkthrough/more.md"
+            },
+            "completionEvents": [
+              "onCommand:harAtlas.showFailedRequests",
+              "onCommand:harAtlas.showSlowestRequests"
+            ]
+          },
+          {
+            "id": "harAtlas.step.pro",
+            "title": "Try Pro free for 14 days",
+            "description": "The first Pro command you run starts a free 14-day trial on this computer, with no key and no network: Show Host Breakdown, Show Caching And Compression.\n[Show Host Breakdown](command:harAtlas.showHostBreakdown)",
+            "media": {
+              "markdown": "media/walkthrough/pro.md"
+            },
+            "completionEvents": [
+              "onCommand:harAtlas.showHostBreakdown",
+              "onCommand:harAtlas.showCachingCompression"
+            ]
+          },
+          {
+            "id": "harAtlas.step.licence",
+            "title": "Licence and help",
+            "description": "Buy Pro (Personal USD 19, Business USD 39 per user), enter a key, see the licence status, or report a problem.\n[Show Licence Status](command:harAtlas.licenceStatus)\n[Report A Problem](command:harAtlas.reportProblem)",
+            "media": {
+              "markdown": "media/walkthrough/licence.md"
+            },
+            "completionEvents": [
+              "onCommand:harAtlas.licenceStatus"
+            ]
+          }
+        ]
+      }
+    ],
+    "configuration": {
+      "title": "HAR Atlas",
+      "properties": {
+        "harAtlas.maxFileSizeMB": {
+          "type": "number",
+          "default": 50,
+          "minimum": 0.1,
+          "maximum": 50,
+          "markdownDescription": "Largest file (in MB) a report reads, up to 50 MB (VS Code passes files only up to 50 MB to extensions). Larger files are refused with a message."
+        },
+        "harAtlas.openReportsAsPreview": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "Open each report in the Markdown preview as well as in a new editor."
+        }
+      }
+    }
+  }
+}
